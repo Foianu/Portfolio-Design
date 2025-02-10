@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Quicksand', 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #111;
+    color: #efefef;
+}
+
+section {
+    max-width: 1600px;
+    margin-inline: auto;
+    padding: 2rem 0 2rem 0;
+}
+
+section a {
+    text-decoration: none;
+    color: #847ee4;
+}
+
+    section a:hover {
+        color: #fff;
+    }
+
+    section h1 {
+        text-align: center;
+        padding: 0 0 20rem 0;
+
+    }
+
+
+.main {
+    height: 100vh;
+    background-image: url("../img/Artboard 1 - Cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.arrow {
+    max-width: 1600px;
+    margin-inline: auto;
+    text-align: center;
+    padding: 14rem 0 20rem 0;
+    opacity: 100%;
+}
+
+    .arrow:hover {
+        opacity: 20%;
+    }
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    margin: 4rem 0 4rem 0;
+    gap: 4rem;
+    align-items: center;
+}
+
+
+    .img-1 {
+        height: 100%;  
+        cursor: pointer;
+    }
+        .img-1:hover {
+            height: 100%;
+            cursor: pointer;
+            opacity: 40%;
+            transform: scale(0.9);
+        }
+
+
+
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 8rem 0 8rem 0;
+    grid-gap: 4rem;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.icons {
+    display: flex;
+    padding: 2rem 0 2rem 0;
+    gap: 1rem;
+}
+
+.icons img:hover {
+    opacity: 20%;
+}
+
+
+
+/* pages */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+
+
+
+/* footer */
+
+footer {
+    text-align: center;
+    margin: 2rem;
+    color: #333;
+}
+
+.divider {
+    text-align: center;
+    background-color: #333;
+    padding: 0.5px;
+    margin: 2rem;
+}
