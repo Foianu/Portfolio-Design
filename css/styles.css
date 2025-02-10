@@ -88,14 +88,6 @@ section a {
 
 
 
-
-
-
-
-
-
-
-
 .icons {
     display: flex;
     padding: 2rem 0 2rem 0;
@@ -116,6 +108,26 @@ section a {
     padding: 1rem;
 }
 
+.container-img {
+    width: 70%;
+    margin: 0 auto;
+    padding: 1rem;
+    gap: 10rem;
+}
+
+    .container-img img {
+        padding: 6rem 0 6rem 0;
+    }
+
+    .container-page {
+        width: 70%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 4rem 0 4rem 0;
+        gap: 4rem;
+        align-items: center;
+    }
 
 
 
