@@ -45,7 +45,7 @@ section a {
     max-width: 1600px;
     margin-inline: auto;
     text-align: center;
-    padding: 14rem 0 20rem 0;
+    padding: 14rem 0 18rem 0;
     opacity: 100%;
 }
 
@@ -184,6 +184,19 @@ footer {
         margin: 4rem 0 4rem 0;
         gap: 4rem;
         align-items: center;
+    }
+
+    .arrow {
+        max-width: 1600px;
+        margin-inline: auto;
+        text-align: center;
+        padding: 2rem 0 6rem 0;
+        opacity: 100%;
+    }   
+
+    .arrow img {
+        width: 40px;
+        height: 60px;
     }
 
   }
