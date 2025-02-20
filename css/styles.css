@@ -154,11 +154,15 @@ footer {
 
     body { 
       font-size: 18px; 
-      margin: 0 1rem 0 1rem;
+    }
+
+    section {
+        margin: 0 1rem 0 1rem;
+
     }
 
     .main {
-        height: 70vh;
+        height: 60vh;
         background-image: url("../img/Artboard 1 - Cover.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -174,7 +178,7 @@ footer {
         align-items: center;
     }
 
-    .grid-container {
+    .grid-container-1 {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         margin: 4rem 0 4rem 0;
