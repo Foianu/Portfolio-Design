@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 
-    font-family: 'Quicksand', 'Courier New', Courier, monospace;
+    font-family: 'Quicksand', Verdana, Tahoma, sans-serif;
 }
 
 body {
     background-color: #111;
-    color: #efefef;
+    color: #666666;
 }
 
 section {
@@ -19,7 +19,7 @@ section {
 
 section a {
     text-decoration: none;
-    color: #847ee4;
+    color: #efefef;
 }
 
     section a:hover {
