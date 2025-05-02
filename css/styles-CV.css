@@ -33,14 +33,6 @@ section a {
     }
 
 
-.main {
-    height: 100vh;
-    background-image: url("../img/Artboard 1 - Cover.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
 .arrow {
     max-width: 1600px;
     margin-inline: auto;
@@ -169,18 +161,9 @@ footer {
 
     }
 
-    .main {
-        height: 60vh;
-        background-image: url("../img/Artboard 1 - Cover.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin: 0 auto;
-    }
-
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: 1fr 2fr;
         margin: 4rem 0 4rem 0;
         gap: 4rem;
         align-items: center;
@@ -188,23 +171,10 @@ footer {
 
     .grid-container-1 {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: auto;
         margin: 4rem 0 4rem 0;
         gap: 4rem;
         align-items: center;
-    }
-
-    .arrow {
-        max-width: 1600px;
-        margin-inline: auto;
-        text-align: center;
-        padding: 2rem 0 6rem 0;
-        opacity: 100%;
-    }   
-
-    .arrow img {
-        width: 40px;
-        height: 60px;
     }
 
   }
