@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Quicksand', Verdana, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: #666666;
+}
+
+section {
+    max-width: 1600px;
+    margin-inline: auto;
+    padding: 2rem 0 2rem 0;
+}
+
+section a {
+    text-decoration: none;
+    color: #efefef;
+}
+
+    section a:hover {
+        color: #fff;
+    }
+
+    section h1 {
+        text-align: center;
+        padding: 0 0 20rem 0;
+
+    }
+
+
+.main {
+    height: 100vh;
+    background-image: url("../img/Artboard 1 - Cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.arrow {
+    max-width: 1600px;
+    margin-inline: auto;
+    text-align: center;
+    padding: 14rem 0 18rem 0;
+    opacity: 100%;
+}
+
+    .arrow:hover {
+        opacity: 20%;
+    }
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 4rem 0 4rem 0;
+    gap: 4rem;
+}
+
+
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 2rem 0 2rem 0;
+}
+
+
+    .description-title {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        margin: 2rem 0 2rem 0;
+    }
+
+    .description-left {
+        text-align: end;
+    }
+    
+    .description-right {
+        text-align: start;
+    }
+
+.title-left {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 8px 0 8px 0;
+}
+
+.title-right {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 6px 0 6px 0;
+}
+
+
+.tools {
+    display: flex;
+    justify-content: baseline;
+    gap: 2rem;
+    padding: 2rem 0 2rem 0;
+}
+
+    .tools-icons {
+        text-align: center;
+    }
+
+
+    .superscript {
+        color: #FFA807;
+    }
+
+
+/*
+.icons {
+    display: flex;
+    padding: 2rem 0 2rem 0;
+    gap: 1rem;
+}
+
+.icons img:hover {
+    opacity: 20%;
+}
+*/
+
+
+
+/* footer */
+
+footer {
+    text-align: center;
+    margin: 2rem;
+    color: #333;
+}
+
+.divider {
+    text-align: center;
+    background-color: #333;
+    padding: 0.5px;
+    margin: 2rem;
+}
+
+
+/* mobile */
+
+@media (max-width: 900px) {
+
+    body { 
+      font-size: 18px; 
+    }
+
+    section {
+        margin: 0 1rem 0 1rem;
+
+    }
+
+    .main {
+        height: 60vh;
+        background-image: url("../img/Artboard 1 - Cover.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin: 4rem 0 4rem 0;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .grid-container-1 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin: 4rem 0 4rem 0;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .arrow {
+        max-width: 1600px;
+        margin-inline: auto;
+        text-align: center;
+        padding: 2rem 0 6rem 0;
+        opacity: 100%;
+    }   
+
+    .arrow img {
+        width: 40px;
+        height: 60px;
+    }
+
+  }
+
