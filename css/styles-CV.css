@@ -26,12 +26,6 @@ section a {
         color: #fff;
     }
 
-    section h1 {
-        text-align: center;
-        padding: 0 0 20rem 0;
-
-    }
-
 
 .arrow {
     max-width: 1600px;
@@ -67,23 +61,36 @@ section a {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin: 4rem 0 4rem 0;
-    gap: 4rem;
+    margin: 2rem 0 2rem 0;
+    gap: 6rem;
 }
 
 
 .grid-container-1 {
-    display: grid;
-    grid-template-columns: auto;
-    margin: 2rem 0 2rem 0;
+    margin: 10rem 0 10rem 0;
+    background-color: #efefef;
 }
 
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem 0 2rem 0;
+    gap: 6rem;
+}
+
+
+
+.skills a {
+    color: #666;
+    text-decoration: underline;
+}
 
     .description-title {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(2fr, 1fr));
-        margin: 2rem 0 2rem 0;
+        margin: 2rem 0 0 0;
     }
+
 
     .description-left {
         justify-self: stretch;
@@ -93,13 +100,14 @@ section a {
     .description-right {
         justify-self: stretch;
         text-align: start;
+
     }
 
 .title-left {
     color: #fff;
     font-size: 24px;
     font-weight: bolder;
-    padding: 7.6px 0 7.6px 0;
+    padding: 10px 0 7px 0;
 }
 
 .title-right {
@@ -115,6 +123,7 @@ section a {
     justify-content: baseline;
     gap: 2rem;
     padding: 2rem 0 2rem 0;
+
 }
 
     .tools-icons {
@@ -126,8 +135,36 @@ section a {
         font-size: 14px;
     }
 
-    .superscript {
+    .superscript-skill {
         color: #FFA807;
+    }
+    
+    .superscript-course {
+        color: #FF36A5;
+    }
+
+
+
+
+
+.portfolio {
+    display: flex;
+    justify-content: baseline;
+    gap: 2rem;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+    .portfolio-icons {
+        text-align: center;
+    }
+
+    .portfolio-icons p {
+        margin: 0.5rem 0 0 0;
+        font-size: 14px;
+    }
+
+    .portfolio-icons a:hover {
+        opacity: 20%;
     }
 
 
