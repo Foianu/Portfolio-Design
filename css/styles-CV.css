@@ -85,6 +85,11 @@ section a {
     text-decoration: underline;
 }
 
+.skills-star a {
+    color: #FF36A5;
+    text-decoration: underline;
+}
+
     .description-title {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(2fr, 1fr));
@@ -206,12 +211,12 @@ footer {
         align-items: center;
     }
 
-    .grid-container-1 {
+
+    .grid-container-2 {
         display: grid;
         grid-template-columns: auto;
-        margin: 4rem 0 4rem 0;
-        gap: 4rem;
-        align-items: center;
+        margin: 2rem 0 2rem 0;
+        gap: 6rem;
     }
 
   }
