@@ -58,6 +58,9 @@ section a {
         text-align: center;
         background-color: #fff;
         padding: 4rem;
+        padding: 2rem 0 2rem 0;
+        gap: 2rem;
+        
     }
     
     .CV a:hover {
@@ -66,7 +69,6 @@ section a {
     
         .CV h1 {
             font-weight: bolder;
-            padding: 2rem 0 2rem 0;
         }
 
 
@@ -88,15 +90,17 @@ section a {
 
     .description-title {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(2fr, 1fr));
         margin: 2rem 0 2rem 0;
     }
 
     .description-left {
+        justify-self: stretch;
         text-align: end;
     }
     
     .description-right {
+        justify-self: stretch;
         text-align: start;
     }
 
@@ -104,7 +108,7 @@ section a {
     color: #fff;
     font-size: 24px;
     font-weight: bolder;
-    padding: 8px 0 8px 0;
+    padding: 7.6px 0 7.6px 0;
 }
 
 .title-right {
@@ -126,23 +130,14 @@ section a {
         text-align: center;
     }
 
+    .tools-icons p {
+        margin: 0.5rem 0 0 0;
+        font-size: 14px;
+    }
 
     .superscript {
         color: #FFA807;
     }
-
-
-/*
-.icons {
-    display: flex;
-    padding: 2rem 0 2rem 0;
-    gap: 1rem;
-}
-
-.icons img:hover {
-    opacity: 20%;
-}
-*/
 
 
 
@@ -164,7 +159,7 @@ footer {
 
 /* mobile */
 
-@media (max-width: 900px) {
+@media (max-width: 300px) {
 
     body { 
       font-size: 18px; 
