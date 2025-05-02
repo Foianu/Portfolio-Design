@@ -70,6 +70,7 @@ section a {
         padding: 2rem 0 2rem 0;
     }
 
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
