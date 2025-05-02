@@ -33,13 +33,14 @@ section a {
     }
 
 
-.main {
-    height: 100vh;
-    background-image: url("../img/Artboard 1 - Cover.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+    .main {
+        height: 100vh;
+        background-image: url("../img/Artboard 1 - Cover.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
 
 .arrow {
     max-width: 1600px;
@@ -54,6 +55,20 @@ section a {
     }
 
 
+.CV {
+    text-align: center;
+    background-color: #fff;
+    padding: 4rem;
+}
+
+.CV a:hover {
+    opacity: 20%;
+}
+
+    .CV h1 {
+        font-weight: bolder;
+        padding: 2rem 0 2rem 0;
+    }
 
 .grid-container {
     display: grid;
