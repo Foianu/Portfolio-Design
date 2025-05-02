@@ -214,7 +214,7 @@ footer {
 
     .grid-container-2 {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 1fr 1fr;
         margin: 2rem 0 2rem 0;
         gap: 6rem;
     }
