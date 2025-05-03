@@ -81,8 +81,6 @@ section a {
     grid-template-columns: 1fr 2fr;
     margin: 2rem 0 2rem 0;
     gap: 6rem;
-    background-color: red;
-
 }
 
 
@@ -97,8 +95,6 @@ section a {
     grid-template-columns: 1fr 2fr;
     margin: 2rem 0 2rem 0;
     gap: 6rem;
-    background-color: blue;
-
 }
 
 
@@ -177,12 +173,9 @@ section a {
 
 .tools {
     display: grid;
-    grid-template-columns: 1fr;
-    justify-content: baseline;
+    grid-template-columns: repeat(6, 1fr);
     gap: 2rem;
     padding: 2rem 0 2rem 0;
-    background-color: pink;
-
 }
 
     .tools-icons {
@@ -285,7 +278,7 @@ footer {
 
     .contact {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(1, 1fr); 
         gap: 2rem;
         color: #000;
         font-weight: bolder;
@@ -305,6 +298,13 @@ footer {
         grid-template-columns: 1fr 2fr;
         margin: 2rem 0 2rem 0;
         gap: 6rem;
+    }
+
+    .tools {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 2rem;
+        padding: 2rem 0 2rem 0;
     }
 
   }
