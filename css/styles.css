@@ -107,7 +107,7 @@ section a {
 .icons {
     display: flex;
     padding: 2rem 0 2rem 0;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .icons img:hover {

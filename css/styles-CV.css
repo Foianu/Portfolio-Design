@@ -27,6 +27,37 @@ section a {
     }
 
 
+.contact {
+    max-width: 1600px;
+    margin-inline: auto;
+    padding: 2rem 0 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    color: #000;
+    font-weight: bolder;
+}
+
+
+    .contact-data {
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .icon-data {
+        justify-self: stretch;
+    }
+
+    .contact-icon a:hover {
+        opacity: 20%;
+    }
+
+
+
 .arrow {
     max-width: 1600px;
     margin-inline: auto;
@@ -57,7 +88,6 @@ section a {
 
 
 
-
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -71,9 +101,10 @@ section a {
     background-color: #efefef;
 }
 
-.grid-container-2 {
+
+.grid-container-course {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     margin: 2rem 0 2rem 0;
     gap: 6rem;
 }
@@ -90,6 +121,30 @@ section a {
     text-decoration: underline;
 }
 
+.skills-nostar a {
+    color: #666;
+    text-decoration: underline;
+}
+
+
+.projects-links a{
+    color: #7291FC;
+    text-decoration: underline;
+}
+
+.projects-links a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+.description {
+    justify-self: stretch;
+    text-align: start;
+    padding: 2rem 0 0 0;
+}
+
+
     .description-title {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(2fr, 1fr));
@@ -105,7 +160,6 @@ section a {
     .description-right {
         justify-self: stretch;
         text-align: start;
-
     }
 
 .title-left {
@@ -119,6 +173,12 @@ section a {
     color: #fff;
     font-size: 24px;
     font-weight: bolder;
+    padding: 6px 0 6px 0;
+}
+
+.subtitle {
+    color: #fff;
+    font-size: 18px;
     padding: 6px 0 6px 0;
 }
 
@@ -144,12 +204,37 @@ section a {
         color: #FFA807;
     }
     
-    .superscript-course {
+    .superscript-certificate {
         color: #FF36A5;
+    }
+
+    .superscript-course {
+        color: #EA7EFF;
+    }
+
+
+    .superscript-job {
+        color: #7291FC;
+    }
+
+    
+    .superscript-hobby {
+        color: #1FCCCC;
+    }
+
+
+    .superscript-play {
+        color: #9736FF;
+    }
+
+    .superscript-college {
+        color: #FF5E07;
     }
 
 
 
+
+    
 
 
 .portfolio {
@@ -166,9 +251,10 @@ section a {
     .portfolio-icons p {
         margin: 0.5rem 0 0 0;
         font-size: 14px;
+        color: #fff;
     }
 
-    .portfolio-icons a:hover {
+    .portfolio-icons:hover {
         opacity: 20%;
     }
 
