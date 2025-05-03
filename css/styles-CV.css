@@ -278,8 +278,7 @@ footer {
     }
 
     .contact {
-        display: grid;
-        grid-template-columns: 1fr;
+
         gap: 2rem;
         color: #000;
         font-weight: bolder;
