@@ -28,7 +28,7 @@ section a {
 
 
 .contact {
-    max-width: 1600px;
+    max-width: 1400px;
     margin-inline: auto;
     padding: 2rem 0 2rem 0;
     display: grid;
@@ -38,23 +38,11 @@ section a {
     font-weight: bolder;
 }
 
-
-    .contact-data {
-        background-color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-        gap: 1.5rem;
-    }
-
-    .icon-data {
-        justify-self: stretch;
-    }
-
-    .contact-icon a:hover {
-        opacity: 20%;
-    }
+.contact-box {
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
 
 
 
