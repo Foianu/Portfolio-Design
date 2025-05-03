@@ -39,7 +39,7 @@ section a {
 }
 
 .contact-box {
-    background-color: #fff;
+    background-color: purple;
     padding: 1rem;
     text-align: center;
 }
@@ -278,7 +278,7 @@ footer {
     }
 
     .contact {
-
+        grid-template-columns: repeat(2, 1fr); 
         gap: 2rem;
         color: #000;
         font-weight: bolder;
