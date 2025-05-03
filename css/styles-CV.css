@@ -81,6 +81,8 @@ section a {
     grid-template-columns: 1fr 2fr;
     margin: 2rem 0 2rem 0;
     gap: 6rem;
+    background-color: red;
+
 }
 
 
@@ -95,6 +97,8 @@ section a {
     grid-template-columns: 1fr 2fr;
     margin: 2rem 0 2rem 0;
     gap: 6rem;
+    background-color: blue;
+
 }
 
 
@@ -176,6 +180,7 @@ section a {
     justify-content: baseline;
     gap: 2rem;
     padding: 2rem 0 2rem 0;
+    background-color: pink;
 
 }
 
@@ -287,15 +292,15 @@ footer {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        margin: 4rem 0 4rem 0;
-        gap: 4rem;
+        margin: 2rem 0 2rem 0;
+        gap: 6rem;
         align-items: center;
     }
 
 
-    .grid-container-2 {
+    .grid-container-course {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
         margin: 2rem 0 2rem 0;
         gap: 6rem;
     }
