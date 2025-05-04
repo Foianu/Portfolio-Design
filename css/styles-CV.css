@@ -102,7 +102,8 @@ section a {
 }
 
 .skills {
-    grid-template-columns: repeat(auto-fit, minmax(2fr, 1fr));
+    display: grid;
+    grid-template-columns: 1fr;
     background-color: #1FCCCC;
 }
 
@@ -182,7 +183,7 @@ section a {
 
 .tools {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
     padding: 2rem 0 2rem 0;
     background-color: blue;
@@ -209,16 +210,13 @@ section a {
         color: #EA7EFF;
     }
 
-
     .superscript-job {
         color: #7291FC;
     }
-
     
     .superscript-hobby {
         color: #1FCCCC;
     }
-
 
     .superscript-play {
         color: #9736FF;
@@ -227,16 +225,11 @@ section a {
     .superscript-college {
         color: #FF5E07;
     }
-
-
-
-
     
 
 
 .portfolio {
-    display: flex;
-    justify-content: baseline;
+    justify-items: start;
     gap: 2rem;
     padding: 1.5rem 0 1.5rem 0;
 }
