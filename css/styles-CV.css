@@ -29,7 +29,7 @@ section a {
 
 
 .contact {
-    max-width: 1400px;
+    max-width: 1600px;
     margin-inline: auto;
     padding: 2rem 0 2rem 0;
     display: grid;
@@ -37,6 +37,7 @@ section a {
     gap: 2rem;
     color: #000;
     font-weight: bolder;
+    background-color: #FF5E07;
 }
 
 .contact-box {
@@ -97,10 +98,12 @@ section a {
     grid-template-columns: 1fr 2fr;
     margin: 2rem 0 2rem 0;
     gap: 6rem;
+    background-color: #7291FC;
 }
 
 .skills {
     grid-template-columns: repeat(auto-fit, minmax(2fr, 1fr));
+    background-color: #1FCCCC;
 }
 
 .skills a {
@@ -133,6 +136,7 @@ section a {
 .description {
     text-align: start;
     padding: 2rem 0 0 0;
+    background-color: #EA7EFF;
 }
 
 
@@ -140,17 +144,19 @@ section a {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(2fr, 1fr));
         margin: 2rem 0 0 0;
+        background-color: red;
     }
 
 
     .description-left {
-        display: grid;
-        grid-template-columns: 1fr;
         text-align: end;
+        background-color: white;
     }
     
     .description-right {
         text-align: start;
+        background-color: white;
+
     }
 
 .title-left {
@@ -176,9 +182,10 @@ section a {
 
 .tools {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     gap: 2rem;
     padding: 2rem 0 2rem 0;
+    background-color: blue;
 }
 
     .tools-icons {
@@ -266,7 +273,7 @@ footer {
 }
 
 
-/* mobile */
+/* mobile 
 
 @media (max-width: 300px) {
 
@@ -320,3 +327,4 @@ footer {
     }
 
   }
+    */
