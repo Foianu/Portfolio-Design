@@ -4,6 +4,7 @@
     box-sizing: border-box;
 
     font-family: 'Quicksand', Verdana, Tahoma, sans-serif;
+    background-color: #fff;
 }
 
 body {
@@ -172,6 +173,7 @@ section a {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     padding: 2rem 0 2rem 0;
+
 }
 
     .tools-icons {
@@ -182,6 +184,7 @@ section a {
         margin: 0.5rem 0 0 0;
         font-size: 14px;
     }
+
 
     .superscript-skill {
         color: #FFA807;
