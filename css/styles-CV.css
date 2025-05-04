@@ -265,7 +265,7 @@ footer {
 
 /* mobile */
 
-@media (max-width: 200px) {
+@media (max-width: 400px) {
 
     body { 
       font-size: 18px; 
@@ -273,7 +273,6 @@ footer {
 
     section {
         margin: 0 1rem 0 1rem;
-
     }
 
     .contact {
