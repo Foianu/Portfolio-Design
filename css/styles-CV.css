@@ -83,6 +83,7 @@ section a {
     grid-template-columns: 1fr 2fr;
     margin: 2rem 0 2rem 0;
     gap: 6rem;
+    background-color: yellow;
 }
 
 
@@ -146,11 +147,14 @@ section a {
 
     .description-left {
         text-align: end;
+        background-color: white;
+
     }
     
     .description-right {
         text-align: start;
         background-color: white;
+
     }
 
 .title-left {
@@ -281,7 +285,7 @@ footer {
     .contact {
         padding: 2rem 0 2rem 0;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 2rem;
         color: #000;
         font-weight: bolder;
@@ -289,7 +293,7 @@ footer {
 
     .grid-container {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr;
         margin: 2rem 0 2rem 0;
         gap: 6rem;
     }
