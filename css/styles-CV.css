@@ -130,9 +130,9 @@ section a {
 
 
 .description {
-    justify-self: stretch;
     text-align: start;
     padding: 2rem 0 0 0;
+    background-color: blue;
 }
 
 
@@ -140,17 +140,17 @@ section a {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(2fr, 1fr));
         margin: 2rem 0 0 0;
+        background-color: red;
     }
 
 
     .description-left {
-        justify-self: stretch;
         text-align: end;
     }
     
     .description-right {
-        justify-self: stretch;
         text-align: start;
+        background-color: white;
     }
 
 .title-left {
@@ -268,7 +268,7 @@ footer {
 
 /* mobile */
 
-@media (max-width: 400px) {
+@media (max-width: 300px) {
 
     body { 
         font-size: 18px; 
@@ -276,12 +276,12 @@ footer {
 
     section {
         margin: 0 2rem 0 2rem;
-        margin-inline: auto;
     }
 
     .contact {
+        padding: 2rem 0 2rem 0;
         display: grid;
-        grid-template-columns: repeat(1, 1fr); 
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 2rem;
         color: #000;
         font-weight: bolder;
@@ -292,7 +292,11 @@ footer {
         grid-template-columns: 1fr 2fr;
         margin: 2rem 0 2rem 0;
         gap: 6rem;
-        align-items: center;
+    }
+
+    .grid-container-1 {
+        margin: 10rem 0 10rem 0;
+        background-color: #efefef;
     }
 
 
@@ -303,6 +307,18 @@ footer {
         gap: 6rem;
     }
 
+    .description {
+        text-align: start;
+        padding: 2rem 0 0 0;
+    }
+    
+    .description-title {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(2fr, 1fr));
+        margin: 2rem 0 0 0;
+    }
+    
+
     .tools {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -311,4 +327,3 @@ footer {
     }
 
   }
-
