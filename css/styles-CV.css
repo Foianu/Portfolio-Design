@@ -80,7 +80,6 @@ section a {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-columns: repeat(auto-fit, minmax(2fr, 1fr));
     margin: 2rem 0 2rem 0;
     gap: 6rem;
     background-color: yellow;
@@ -101,7 +100,7 @@ section a {
 }
 
 .skills {
-
+    grid-template-columns: repeat(auto-fit, minmax(2fr, 1fr));
 }
 
 .skills a {
@@ -134,7 +133,6 @@ section a {
 .description {
     text-align: start;
     padding: 2rem 0 0 0;
-    background-color: blue;
 }
 
 
@@ -142,11 +140,12 @@ section a {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(2fr, 1fr));
         margin: 2rem 0 0 0;
-        background-color: red;
     }
 
 
     .description-left {
+        display: grid;
+        grid-template-columns: 1fr;
         text-align: end;
     }
     
