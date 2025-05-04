@@ -32,7 +32,7 @@ section a {
     margin-inline: auto;
     padding: 2rem 0 2rem 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     color: #000;
     font-weight: bolder;
@@ -169,10 +169,11 @@ section a {
 
 .tools {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(8, 1fr);
+
     gap: 2rem;
     padding: 2rem 0 2rem 0;
-    background-color: blue;
 }
 
     .tools-icons {
@@ -252,65 +253,5 @@ footer {
 }
 
 
-/* mobile */
 
-@media (max-width: 300px) {
-
-    body { 
-        font-size: 18px; 
-    }
-
-    section {
-        margin: 0 2rem 0 2rem;
-    }
-
-    .contact {
-        max-width: 1600px;
-        margin-inline: auto;
-        padding: 2rem 0 2rem 0;
-        display: grid;
-        gap: 2rem;
-        color: #000;
-        font-weight: bolder;
-    }
-
-    .grid-container {
-        display: grid;
-        margin: 2rem 0 2rem 0;
-        gap: 6rem;
-    }
-
-    .grid-container-1 {
-        margin: 10rem 0 10rem 0;
-        background-color: #efefef;
-    }
-
-
-    .grid-container-course {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        margin: 2rem 0 2rem 0;
-        gap: 6rem;
-    }
-
-    .description {
-        text-align: start;
-        padding: 2rem 0 0 0;
-    }
-    
-    .description-title {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(2fr, 1fr));
-        margin: 2rem 0 0 0;
-    }
-    
-
-    .tools {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        gap: 2rem;
-        padding: 2rem 0 2rem 0;
-    }
-
-  }
    
