@@ -16,7 +16,6 @@ section {
     margin-inline: auto;
     padding: 2rem 0 2rem 0;
     background-color: #9736FF;
-
 }
 
 section a {
@@ -81,6 +80,7 @@ section a {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fit, minmax(2fr, 1fr));
     margin: 2rem 0 2rem 0;
     gap: 6rem;
     background-color: yellow;
@@ -98,10 +98,11 @@ section a {
     grid-template-columns: 1fr 2fr;
     margin: 2rem 0 2rem 0;
     gap: 6rem;
-    background-color: #EA7EFF;
 }
 
+.skills {
 
+}
 
 .skills a {
     color: #666;
@@ -147,14 +148,10 @@ section a {
 
     .description-left {
         text-align: end;
-        background-color: white;
-
     }
     
     .description-right {
         text-align: start;
-        background-color: white;
-
     }
 
 .title-left {
