@@ -15,7 +15,6 @@ section {
     max-width: 1600px;
     margin-inline: auto;
     padding: 2rem 0 2rem 0;
-    background-color: #9736FF;
 }
 
 section a {
@@ -32,8 +31,8 @@ section a {
     max-width: 1600px;
     margin-inline: auto;
     padding: 2rem 0 2rem 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+
     gap: 2rem;
     color: #000;
     font-weight: bolder;
@@ -44,6 +43,7 @@ section a {
     background-color: #fff;
     padding: 1rem;
     text-align: center;
+    flex-grow: 1;
 }
 
 
@@ -83,7 +83,6 @@ section a {
     grid-template-columns: 1fr 2fr;
     margin: 2rem 0 2rem 0;
     gap: 6rem;
-    background-color: yellow;
 }
 
 
@@ -98,14 +97,14 @@ section a {
     grid-template-columns: 1fr 2fr;
     margin: 2rem 0 2rem 0;
     gap: 6rem;
-    background-color: #7291FC;
 }
 
+/*
 .skills {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: #1FCCCC;
 }
+*/
 
 .skills a {
     color: #666;
@@ -137,7 +136,6 @@ section a {
 .description {
     text-align: start;
     padding: 2rem 0 0 0;
-    background-color: #EA7EFF;
 }
 
 
@@ -145,19 +143,15 @@ section a {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(2fr, 1fr));
         margin: 2rem 0 0 0;
-        background-color: red;
     }
 
 
     .description-left {
         text-align: end;
-        background-color: white;
     }
     
     .description-right {
         text-align: start;
-        background-color: white;
-
     }
 
 .title-left {
