@@ -31,19 +31,17 @@ section a {
     max-width: 1600px;
     margin-inline: auto;
     padding: 2rem 0 2rem 0;
-    display: flex;
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     color: #000;
     font-weight: bolder;
-    background-color: #FF5E07;
 }
 
 .contact-box {
     background-color: #fff;
     padding: 1rem;
     text-align: center;
-    flex-grow: 1;
 }
 
 
@@ -99,12 +97,6 @@ section a {
     gap: 6rem;
 }
 
-/*
-.skills {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-*/
 
 .skills a {
     color: #666;
@@ -260,7 +252,7 @@ footer {
 }
 
 
-/* mobile 
+/* mobile */
 
 @media (max-width: 300px) {
 
@@ -272,11 +264,18 @@ footer {
         margin: 0 2rem 0 2rem;
     }
 
-
+    .contact {
+        max-width: 1600px;
+        margin-inline: auto;
+        padding: 2rem 0 2rem 0;
+        display: grid;
+        gap: 2rem;
+        color: #000;
+        font-weight: bolder;
+    }
 
     .grid-container {
         display: grid;
-        grid-template-columns: 1fr;
         margin: 2rem 0 2rem 0;
         gap: 6rem;
     }
@@ -314,4 +313,4 @@ footer {
     }
 
   }
-    */
+   
