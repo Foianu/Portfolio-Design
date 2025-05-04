@@ -282,14 +282,7 @@ footer {
         margin: 0 2rem 0 2rem;
     }
 
-    .contact {
-        padding: 2rem 0 2rem 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        color: #000;
-        font-weight: bolder;
-    }
+
 
     .grid-container {
         display: grid;
