@@ -97,25 +97,32 @@ section a {
     gap: 6rem;
 }
 
+.skills {
+    padding: 1rem 0 1rem 0;
+    color: #fff;
+}
 
-.skills a {
+
+.link a {
     color: #666;
     text-decoration: underline;
 }
 
-.skills-star a {
+.link-star a {
     color: #FF36A5;
     text-decoration: underline;
 }
 
-.skills-nostar a {
+.link-nostar a {
     color: #666;
     text-decoration: underline;
 }
 
 
+
+
 .projects-links a{
-    color: #7291FC;
+    color: #FF4A68;
     text-decoration: underline;
 }
 
@@ -146,13 +153,15 @@ section a {
         text-align: start;
     }
 
-.title-left {
-    color: #fff;
-    font-size: 24px;
-    font-weight: bolder;
-    padding: 10px 0 7px 0;
-}
 
+    .subtitle {
+        color: #fff;
+        font-size: 18px;
+        padding: 6px 0 6px 0;
+    }
+
+
+    
 .title-right {
     color: #fff;
     font-size: 24px;
@@ -160,22 +169,87 @@ section a {
     padding: 6px 0 6px 0;
 }
 
-.subtitle {
+
+.title-left {
     color: #fff;
-    font-size: 18px;
-    padding: 6px 0 6px 0;
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 10px 0 7px 0;
+}
+
+.title-left-freelance {
+    color: #7291FC;
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 10px 0 7px 0;
+}
+
+.title-left-job {
+    color: #FF4A68;
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 10px 0 7px 0;
 }
 
 
+.title-left-skill {
+    color: #FFA807;
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 10px 0 7px 0;
+}
+
+.title-left-course {
+    color: #EA7EFF;
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 10px 0 7px 0;
+}
+
+.title-left-certificate {
+    color: #FF36A5;
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 10px 0 7px 0;
+}
+
+.title-left-hobby {
+    color: #1FCCCC;
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 10px 0 7px 0;
+}
+
+.title-left-play {
+    color: #9736FF;
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 10px 0 7px 0;
+}
+
+.title-left-college {
+    color: #FF5E07;
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 10px 0 7px 0;
+}
+
+/*
 .tools {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     padding: 2rem 0 2rem 0;
-
 }
+*/
+
+
 
     .tools-icons {
+        display: inline-block;
+        padding: 1.5rem 0 1.5rem 0;
+        margin: 1rem;
+
         text-align: center;
     }
 
@@ -183,22 +257,27 @@ section a {
         margin: 0.5rem 0 0 0;
         font-size: 14px;
     }
+    
 
+    .superscript-freelance {
+        color: #7291FC;
+    }
+
+
+    .superscript-job {
+        color: #FF4A68;
+    }
 
     .superscript-skill {
         color: #FFA807;
-    }
-    
-    .superscript-certificate {
-        color: #FF36A5;
     }
 
     .superscript-course {
         color: #EA7EFF;
     }
 
-    .superscript-job {
-        color: #7291FC;
+    .superscript-certificate {
+        color: #FF36A5;
     }
     
     .superscript-hobby {

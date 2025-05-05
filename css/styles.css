@@ -105,14 +105,26 @@ section a {
 
 
 .icons {
-    display: flex;
-    padding: 2rem 0 2rem 0;
-    gap: 2rem;
+    display: inline-block;
+    padding: 1.5rem 0 1.5rem 0;
+    margin: 1rem;
 }
 
-.icons img:hover {
+.icons-text:hover {
     opacity: 20%;
 }
+
+.icons-text {
+    text-align: center;
+}
+
+.icons-text p {
+    margin: 0.5rem 0 0 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+
 
 
 
