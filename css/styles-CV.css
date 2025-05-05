@@ -234,15 +234,6 @@ section a {
     padding: 10px 0 7px 0;
 }
 
-/*
-.tools {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    padding: 2rem 0 2rem 0;
-}
-*/
-
 
 
     .tools-icons {
@@ -294,13 +285,10 @@ section a {
     
 
 
-.portfolio {
-    justify-items: start;
-    gap: 2rem;
-    padding: 1.5rem 0 1.5rem 0;
-}
-
     .portfolio-icons {
+        display: inline-block;
+        padding: 1.5rem 0 1.5rem 0;
+        margin: 1rem;
         text-align: center;
     }
 
