@@ -25,6 +25,7 @@ section a {
     section a:hover {
         color: #fff;
     }
+    
 
     section h1 {
         text-align: center;
@@ -40,6 +41,16 @@ section a {
         background-size: cover;
         background-position: center;
     }
+
+.highlight {
+    color: #fff;
+}
+    
+
+.highlight:hover {
+    opacity: 20%;
+}
+
 
 
 .arrow {
