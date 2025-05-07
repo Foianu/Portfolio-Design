@@ -332,12 +332,18 @@ footer {
     .grid-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
     }
 
+    .grid-container-1 {
+        margin: 6rem 0 6rem 0;
+        background-color: #efefef;
+    }
     
     .grid-container-course {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
     }
 
   }
