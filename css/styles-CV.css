@@ -321,5 +321,25 @@ footer {
 }
 
 
+/* mobile */
 
-   
+@media (max-width: 400px) {
+
+    section {
+        margin: 0 1rem 0 1rem;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin: 4rem 0 4rem 0;
+    }
+
+    
+    .grid-container-course {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin: 4rem 0 4rem 0;
+    }
+
+  }
