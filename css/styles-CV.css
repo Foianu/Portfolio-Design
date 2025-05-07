@@ -87,7 +87,6 @@ section a {
 
 .grid-container-1 {
     margin: 10rem 0 10rem 0;
-    background-color: #efefef;
 }
 
 
@@ -132,11 +131,6 @@ section a {
     text-decoration: underline;
 }
 
-
-.description {
-    text-align: start;
-    padding: 2rem 0 0 0;
-}
 
 
     .description-title {
@@ -329,18 +323,17 @@ footer {
     .grid-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 1rem;
+        gap: 0.1rem;
     }
 
     .grid-container-1 {
         margin: 6rem 0 6rem 0;
-        background-color: #efefef;
     }
     
     .grid-container-course {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 1rem;
+        gap: 0.1em;
     }
 
     .description-left {
