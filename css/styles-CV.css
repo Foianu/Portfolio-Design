@@ -346,4 +346,8 @@ footer {
         gap: 1rem;
     }
 
+    .description-left {
+        text-align: start;
+    }
+
   }
