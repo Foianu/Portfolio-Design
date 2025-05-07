@@ -142,16 +142,17 @@ section a {
     .description-title {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(2fr, 1fr));
-        margin: 2rem 0 0 0;
     }
 
 
     .description-left {
         text-align: end;
+        margin: 2rem 0 2rem 0;
     }
     
     .description-right {
         text-align: start;
+        margin: 2rem 0 2rem 0;
     }
 
 
@@ -235,14 +236,11 @@ section a {
     padding: 10px 0 7px 0;
 }
 
-
-
     .tools-icons {
         display: inline-block;
-        padding: 1.5rem 0 1.5rem 0;
-        margin: 1rem;
-
         text-align: center;
+        padding: 1.5rem;
+        margin: 0 1rem 0 0;
     }
 
     .tools-icons p {
@@ -285,12 +283,11 @@ section a {
     }
     
 
-
     .portfolio-icons {
         display: inline-block;
-        padding: 1.5rem 0 1.5rem 0;
-        margin: 1rem;
         text-align: center;
+        padding: 1.5rem;
+        margin: 0 1rem 0 0;
     }
 
     .portfolio-icons p {
