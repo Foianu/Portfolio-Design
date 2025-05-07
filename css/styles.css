@@ -127,6 +127,7 @@ section a {
 
 .icons-text {
     text-align: center;
+    text-decoration: underline;
 }
 
 .icons-text p {
