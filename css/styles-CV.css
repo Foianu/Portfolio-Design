@@ -323,7 +323,7 @@ footer {
 
 /* mobile */
 
-@media (max-width: 300px) {
+@media (max-width: 600px) {
 
     section {
         margin: 0 1rem 0 1rem;
