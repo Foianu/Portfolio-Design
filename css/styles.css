@@ -17,6 +17,15 @@ section {
     padding: 2rem 0 2rem 0;
 }
 
+/* section-vertical */
+
+.vertical {
+    max-width: 900px;
+    margin-inline: auto;
+    padding: 2rem 0 2rem 0;
+}
+
+
 section a {
     text-decoration: none;
     color: #efefef;

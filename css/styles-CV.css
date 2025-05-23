@@ -120,6 +120,15 @@ section a {
 }
 
 
+.projects a {
+    color: #FFA807;
+    text-decoration: underline;
+}
+
+.projects a:hover {
+    color: #666;
+}
+
 
 
 .projects-links a{
