@@ -85,7 +85,7 @@ section a {
 
 .grid-container-CV {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: 3fr 1fr;
     margin: 8rem 0 8rem 0;
     gap: 4rem;
     align-items: center;
@@ -244,6 +244,14 @@ footer {
     }
 
     .grid-container-1 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin: 4rem 0 4rem 0;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .grid-container-CV {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         margin: 4rem 0 4rem 0;
