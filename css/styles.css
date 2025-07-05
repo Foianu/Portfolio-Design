@@ -17,6 +17,21 @@ section {
     padding: 2rem 0 2rem 0;
 }
 
+.title-domain {
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.title-next {
+    text-align: center;
+    padding: 20rem 0 20rem 0;
+    color: #666666;
+    font-weight: bolder;
+}
+
+
 /* section-vertical */
 
 .vertical {
@@ -35,12 +50,6 @@ section a {
         color: #fff;
     }
     
-
-    section h1 {
-        text-align: center;
-        padding: 0 0 20rem 0;
-
-    }
 
 
     .main {
@@ -66,7 +75,7 @@ section a {
     max-width: 1600px;
     margin-inline: auto;
     text-align: center;
-    padding: 14rem 0 18rem 0;
+    padding: 14rem 0 0 0;
     opacity: 100%;
 }
 
@@ -74,10 +83,17 @@ section a {
         opacity: 20%;
     }
 
+.grid-container-CV {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 8rem 0 8rem 0;
+    gap: 6rem;
+    align-items: center;
+}
 
 .CV {
     text-align: center;
-    background-color: #fff;
+    background-color: #fff; 
     padding: 4rem;
 }
 
@@ -94,7 +110,7 @@ section a {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    margin: 4rem 0 4rem 0;
+    margin: 8rem 0 8rem 0;
     gap: 4rem;
     align-items: center;
 }
