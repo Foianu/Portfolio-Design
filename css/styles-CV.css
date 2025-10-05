@@ -897,7 +897,7 @@ footer {
         }
 
     .anchor-links {
-        position: fixed;  
+        position: sticky;  
     }
 
 
