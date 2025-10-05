@@ -840,6 +840,7 @@ footer {
 }
 
 
+
 /* mobile */
 
 @media (max-width: 600px) {
@@ -901,17 +902,36 @@ footer {
 
 .anchor-links {
     position: fixed;
-    background-color: #333;
+    background-color: #111;
+    padding: 0.2rem;
 }
 
 
 .table-of-contents {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
+    font-size: 14px;
+}
 
 }
+
+
+/* tablet */
+
+@media (max-width: 1100px) {
+    .anchor-links {
+        position: fixed;
+        background-color: #111;
+        padding: 0.2rem;
+    }
+
+
+    .table-of-contents {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
 
 }
