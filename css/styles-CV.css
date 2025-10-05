@@ -909,6 +909,8 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #fff;
+    padding: 1rem;
+    gap: 1rem;
 }
 
 }
