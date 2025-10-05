@@ -866,10 +866,12 @@ footer {
 
     }
 
-    .description-title {
-        font-size: smaller;
-    }
+    .title-position {
+        font-size: 24px;
+    }   
 
+    
+ 
 
     .anchor-links {
         position: fixed;
@@ -879,8 +881,9 @@ footer {
 
 
     .table-of-contents {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
         gap: 0.1rem;
     }
 }
