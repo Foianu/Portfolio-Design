@@ -906,7 +906,7 @@ footer {
 
 .table-of-contents {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
     background-color: #fff;
