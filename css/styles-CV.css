@@ -901,6 +901,8 @@ footer {
 
 .anchor-links {
     position: fixed;
+    background-color: red;
+    top: 0;
 }
 
 
