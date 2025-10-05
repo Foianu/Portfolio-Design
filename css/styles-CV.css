@@ -907,10 +907,8 @@ footer {
 
 .table-of-contents {
     display: flex;
-    flex-basis: auto;
-    flex-direction: column;
+    flex-grow: 1;
     background-color: #fff;
-    
 }
 
 }
