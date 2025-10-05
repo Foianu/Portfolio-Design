@@ -901,13 +901,13 @@ footer {
 
 .anchor-links {
     position: fixed;
-    top: 0;
 }
 
 
 .table-of-contents {
     display: flex;
-    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: #fff;
 }
 
