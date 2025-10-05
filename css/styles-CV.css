@@ -907,10 +907,11 @@ footer {
 .table-of-contents {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     background-color: #fff;
     padding: 1rem;
-    gap: 1rem;
+    margin: 0;
 }
 
 }
