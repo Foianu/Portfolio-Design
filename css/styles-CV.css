@@ -102,9 +102,7 @@ section a {
     
 .anchor-links {
     position: fixed;
-    top: 20%;
-    right: 0;
-    padding: 6rem;
+    padding: 5rem;
 }
 
 
@@ -907,7 +905,6 @@ footer {
         background-color: #fff;
         padding: 1rem;
         display: flex;
-        flex-direction: row;
         gap: 0.1rem;
     }
 }
