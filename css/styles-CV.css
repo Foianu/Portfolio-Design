@@ -906,12 +906,11 @@ footer {
 
 .table-of-contents {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #fff;
-    padding: 1rem;
-    margin: 0;
+    background-color: #333;
+
 }
 
 }
