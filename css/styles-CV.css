@@ -902,13 +902,12 @@ footer {
 .anchor-links {
     position: fixed;
     top: 0;
-    right: 0;
-    padding: 1rem;
 }
 
 
 .table-of-contents {
     display: flex;
+    flex-basis: auto;
     flex-direction: column;
     background-color: #fff;
     
