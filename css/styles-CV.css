@@ -102,6 +102,8 @@ section a {
     
 .anchor-links {
     position: fixed;
+    top: 0;
+    right: 0;
     padding: 5rem;
 }
 
@@ -896,14 +898,20 @@ footer {
             font-size: 24px;
         }
 
-    .anchor-links {
-        position: sticky;  
-    }
+
+.anchor-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
 
 
-    .table-of-contents {
-        background-color: #fff;
-        display: flex;
-        align-items: center;
-    }
+.table-of-contents {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    
+}
+
 }
