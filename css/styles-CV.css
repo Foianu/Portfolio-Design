@@ -260,8 +260,18 @@ section a {
 
 
 /* Projects */
+
+    .img-musicsimulationcollection {
+        background-image: url('../img/Commercial_30x40 cm_Russ_Poster 1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 40vh;
+        margin: 4rem 0 4rem 0;
+    }
+
     .img-blueprints {
-        background-image: url('../img/Blueprints_Synthesizer.jpg');
+        background-image: url('../img/A4_Synthesizer-02.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -270,7 +280,7 @@ section a {
     }
 
     .img-tablou {
-        background-image: url('../img/Original_Artboard 4.jpg');
+        background-image: url('../img/Artboard 10.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
