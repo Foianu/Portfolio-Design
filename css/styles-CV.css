@@ -55,7 +55,7 @@ header {
 .grids-header {
     display: flex;
     justify-content: space-between;
-    gap: 10rem;
+    gap: 1rem;
     align-items: end;
 }
 
@@ -68,6 +68,7 @@ header {
             font-weight: bolder;
             color: #666;
             text-align: end;
+            padding: 3rem 0 6rem 0;
         }
 
         .subname {
@@ -667,18 +668,31 @@ header {
     right: 0;
 }
 
+
+.table-of-contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+
 body {
     background-color: #fff;
     color: #666;
     margin: 1rem;
 }
 
+header {
+    padding: 1rem 0 1rem 0;
+}
+
 
     .grid-container-header img {
         display: grid;
         grid-template-columns: 1fr;
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
     }
 
     .name {
@@ -686,11 +700,12 @@ body {
         font-weight: bolder;
         color: #666;
         text-align: end;
+        padding: 3rem 0 0 0;
     }
 
 
     .grids-header {
-        display:grid;
+        display: grid;
         grid-template-columns: 1fr;
     }
 
@@ -767,24 +782,6 @@ body {
         font-weight: bolder;
         margin: 1rem 0 0 0;
     }
-
-
-
-
-
-.anchor-links {
-    position: fixed;
-    background-color: #111;
-    padding: 0.2rem;
-}
-
-
-.table-of-contents {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 14px;
-}
 
 }
 
@@ -803,10 +800,23 @@ body {
     right: 0;
 }
 
+
+.table-of-contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+
 body {
     background-color: #fff;
     color: #666;
     margin: 1rem;
+}
+
+header {
+    padding: 1rem 0 1rem 0;
 }
 
     .grid-container-header img {
@@ -821,12 +831,12 @@ body {
         font-weight: bolder;
         color: #666;
         text-align: end;
+        padding: 3rem 0 0 0;
     }
 
     .grids-header {
-        display:grid;
+        display: grid;
         grid-template-columns: 1fr;
-        background-color: red;
     }
 
 
@@ -902,24 +912,5 @@ body {
         font-weight: bolder;
         margin: 1rem 0 0 0;
     }
-
-
-
-
-
-
-.anchor-links {
-    position: fixed;
-    background-color: #111;
-    padding: 0.2rem;
-}
-
-
-.table-of-contents {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 14px;
-}
 
 }

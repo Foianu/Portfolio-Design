@@ -29,7 +29,9 @@ section {
             font-weight: bolder;
             color: #666;
             text-align: end;
+            padding: 3rem 0 6rem 0;
         }
+
 
 .arrow-container {
     max-width: 1800px;
@@ -209,6 +211,7 @@ section a {
         font-weight: bolder;
         color: #666;
         text-align: end;
+        padding: 3rem 0 0 0;
     }
 
 
