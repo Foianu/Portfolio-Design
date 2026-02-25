@@ -661,13 +661,24 @@ header {
 
 @media (max-width: 600px) {
 
+.anchor-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #666;
+    margin: 1rem;
+}
+
+
     .grid-container-header img {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 4rem;
-        margin: 2rem 0 2rem 0;
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
     }
 
     .name {
@@ -677,10 +688,6 @@ header {
         text-align: end;
     }
 
-
-    header {
-        padding: 1rem 0 1rem 0;
-    }
 
     .grids-header {
         display:grid;
@@ -790,13 +797,23 @@ header {
 
 @media (max-width: 1100px) {
 
+.anchor-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #666;
+    margin: 1rem;
+}
+
     .grid-container-header img {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 4rem;
-        margin: 2rem 0 2rem 0;
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
     }
 
     .name {
@@ -806,14 +823,10 @@ header {
         text-align: end;
     }
 
-
-    header {
-        padding: 1rem 0 1rem 0;
-    }
-
     .grids-header {
         display:grid;
         grid-template-columns: 1fr;
+        background-color: red;
     }
 
 

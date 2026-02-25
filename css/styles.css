@@ -24,6 +24,13 @@ section {
 }
 
 
+        .name {
+            font-size: 148px;
+            font-weight: bolder;
+            color: #666;
+            text-align: end;
+        }
+
 .arrow-container {
     max-width: 1800px;
     margin-inline: auto;
@@ -54,15 +61,7 @@ section a {
     }
     
 
-/*
-    .main {
-        height: 100vh;
-        background-image: url("../img/Artboard 1 - Cover.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-*/
+
 
 
 .highlight {
@@ -205,15 +204,13 @@ section a {
         font-size: 18px; 
     }
 
-
-    .main {
-        height: 60vh;
-        background-image: url("../img/Artboard 1 - Cover.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin: 0 auto;
+    .name {
+        font-size: 68px;
+        font-weight: bolder;
+        color: #666;
+        text-align: end;
     }
+
 
     .grid-container {
         display: grid;
