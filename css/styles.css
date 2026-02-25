@@ -202,8 +202,10 @@ section a {
 
 @media (max-width: 900px) {
 
-    body { 
-        font-size: 18px; 
+body { 
+    font-size: 18px; 
+    margin: 1rem;
+}
     }
 
     .name {
