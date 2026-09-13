@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Overpass Mono", monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #efefef;
+    color: #111;
+}
+
+::selection {
+    background: #111;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: #111;
+    color: #fff;
+}
+
+
+
+.main-container {
+    padding: 34rem 0 10rem 0;
+
+}
+
+.header {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    border: none;
+}
+
+
+
+.header-portfolio {
+    text-align: start;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.small-font,
+.small-font-links {
+    font-size: 12px;
+    color: #111;
+    padding: 0.5rem 0;
+}
+
+.top-layout {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    min-height: 220px;
+}
+
+.main {
+    max-width: 220px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 4rem;
+}
+
+.main-contact {
+    max-width: 380px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 4rem;
+}
+
+
+.header-links {
+    text-align: start;
+    width: 100%;
+    padding: 0.5rem 0 0;
+}
+
+.links,
+.links-contact {
+    padding: 0.5rem;
+    border: 1px solid #666;
+    text-align: center;
+}
+
+.links:hover,
+.links-contact:hover {
+    background-color: #fff;
+    color: #111;
+}
+
+.links a,
+.links a:hover,
+.links a:visited,
+.links a:active,
+.links a:focus,
+.links-contact a,
+.links-contact a:hover,
+.links-contact a:visited,
+.links-contact a:active,
+.links-contact a:focus {
+    text-decoration: none;
+    color: #111;
+}
+
+section a {
+    text-decoration: none;
+    color: #111;
+    display: block;
+}
+
+.space-small {
+    margin: 1rem 0;
+}
+
+.space-medium {
+    margin: 4rem 0 6rem;
+}
+
+.space-big {
+    margin: 8rem 0;
+}
+
+.title {
+    padding: 1rem 0;
+    text-align: start;
+    text-decoration: underline;
+}
+
+.highlight {
+    background-color: #fff;
+    color: #111;
+    text-decoration: underline;
+    display: inline;
+}
+
+.highlight:hover {
+    background-color: #111;
+    color: #fff;
+    text-decoration: none;
+}
+
+.content p {
+    padding: 0.5rem 0;
+}
+
+.image {
+    padding: 1rem 0;
+}
+
+.image a,
+.flex-block a {
+    display: block;
+    overflow: hidden;
+    border: none;
+    transition: transform 0.2s ease, opacity 0.2s ease, filter 0.2s ease;
+}
+
+.image a:hover,
+.flex-block a:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+.image img,
+.flex-block img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s ease, opacity 0.2s ease, filter 0.2s ease;
+    filter: grayscale(1);
+}
+
+.image a:hover img,
+.flex-block a:hover img {
+    filter: grayscale(0);
+}
+
+.flex-block {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.3rem;
+}
+
+.grid-images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+    padding: 0.3rem;
+}
+
+.grid-images .image {
+    padding: 0;
+}
+
+.flex-block a {
+    flex: 1;
+    background-color: #d9d9d9;
+}
+
+.grid-images a {
+    background-color: #d9d9d9;
+}
+
+.flex-block a:hover {
+    background-color: #c7c7c7;
+}
+
+.grid-images a:hover {
+    background-color: #c7c7c7;
+}
+
+
+
+
+@media (max-width: 900px) {
+    body {
+        font-size: 18px;
+        margin: 1rem;
+    }
+}
+
+
+/* UI/UX */
+
+.header-UIUX {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    border: none;
+    padding: 6rem;
+    
+}
+
+
+
+/* UI/UX pages */
+
+.pages {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    border: none;
+    padding: 6rem;
+}
