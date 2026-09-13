@@ -230,6 +230,54 @@ section a {
         font-size: 18px;
         margin: 1rem;
     }
+
+    .main-container {
+        padding: 2rem 0 4rem 0;
+    }
+
+    .top-layout {
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        padding: 0 0.5rem;
+    }
+
+    .main,
+    .main-contact {
+        position: static;
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .header,
+    .header-portfolio,
+    .header-links,
+    .header-UIUX,
+    .pages {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .small-font,
+    .small-font-links {
+        padding: 0.35rem 0;
+    }
+
+    .grid-images {
+        grid-template-columns: 1fr;
+    }
+
+    .flex-block {
+        flex-direction: column;
+    }
+
+    .header-UIUX,
+    .pages {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 }
 
 
@@ -257,3 +305,6 @@ section a {
     border: none;
     padding: 6rem;
 }
+
+
+/* mobile */
