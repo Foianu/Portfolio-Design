@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" font-family="'IBM Plex Mono', Consolas, monospace">
+  <rect width="600" height="600" fill="#FBFCFD"/>
+  <text x="30" y="48" font-size="16" font-weight="700" fill="#0F1730" letter-spacing="1">PARTS LIST · A-00</text>
+  <text x="30" y="68" font-size="11" fill="#5B6479">Bench vise 100 mm · 14 parts</text>
+  <g stroke="#0F1730" fill="none">
+    <rect x="30" y="92" width="540" height="456" stroke-width="1.6"/>
+    <line x1="30" y1="128" x2="570" y2="128" stroke-width="1.4"/>
+    <g stroke-width=".7">
+      <line x1="30" y1="180" x2="570" y2="180"/><line x1="30" y1="232" x2="570" y2="232"/><line x1="30" y1="284" x2="570" y2="284"/>
+      <line x1="30" y1="336" x2="570" y2="336"/><line x1="30" y1="388" x2="570" y2="388"/><line x1="30" y1="440" x2="570" y2="440"/>
+      <line x1="30" y1="492" x2="570" y2="492"/>
+      <line x1="80" y1="92" x2="80" y2="548"/><line x1="268" y1="92" x2="268" y2="548"/><line x1="348" y1="92" x2="348" y2="548"/><line x1="520" y1="92" x2="520" y2="548"/>
+    </g>
+  </g>
+  <g font-size="11" font-weight="700" fill="#5B6479" letter-spacing="1">
+    <text x="42" y="115">POS</text><text x="92" y="115">PART</text><text x="280" y="115">DWG</text><text x="360" y="115">MATERIAL</text><text x="530" y="115">QTY</text>
+  </g>
+  <g font-size="13" fill="#0F1730">
+    <text x="50" y="160">1</text><text x="92" y="160">Body</text><text x="280" y="160">A-01</text><text x="360" y="160">EN-GJL-250</text><text x="538" y="160">1</text>
+    <text x="50" y="212">2</text><text x="92" y="212">Moving jaw</text><text x="280" y="212" fill="#2236E0">A-03</text><text x="360" y="212">C45</text><text x="538" y="212">1</text>
+    <text x="50" y="264">3</text><text x="92" y="264">Jaw plate</text><text x="280" y="264">A-04</text><text x="360" y="264">C45, 45 HRC</text><text x="538" y="264">2</text>
+    <text x="50" y="316">4</text><text x="92" y="316">Lead screw Tr20×4</text><text x="280" y="316">A-07</text><text x="360" y="316">42CrMo4</text><text x="538" y="316">1</text>
+    <text x="50" y="368">5</text><text x="92" y="368">Guide bar</text><text x="280" y="368">A-05</text><text x="360" y="368">C45</text><text x="538" y="368">2</text>
+    <text x="50" y="420">6</text><text x="92" y="420">Handle</text><text x="280" y="420">A-08</text><text x="360" y="420">S235</text><text x="538" y="420">1</text>
+    <text x="50" y="472">7</text><text x="92" y="472">ISO 4762 M6×16</text><text x="280" y="472">—</text><text x="360" y="472">8.8, zinc</text><text x="538" y="472">4</text>
+    <text x="50" y="524">8</text><text x="92" y="524">ISO 7089 washer 6</text><text x="280" y="524">—</text><text x="360" y="524">steel, zinc</text><text x="538" y="524">2</text>
+  </g>
+  <rect x="30" y="181" width="540" height="50" fill="#2236E0" opacity=".08"/>
+  <text x="30" y="578" font-size="11" fill="#5B6479">Standard parts from the Fusion 360 content library</text>
+</svg>

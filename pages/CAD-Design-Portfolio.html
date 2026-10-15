@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CAD Design Portfolio</title>
+<link rel="icon" href="../img/portrait.png">
+<link href="../css/base.css" rel="stylesheet">
+<link href="../css/sheets.css" rel="stylesheet">
+<style>
+/* CAD page: blue highlights, page text size */
+:root{--accent:var(--blue)}
+body{margin:0;font-size:16px;line-height:1.6}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <div class="top lbl">
+      <b>CAD Design Portfolio</b>
+      <span>Projects</span>
+    </div>
+  </header>
+  <div class="opening">
+    <span class="lbl muted">2D Sketches + 3D Renders</span>
+    <h1>CAD Design</h1>
+    <div class="count"><b>04</b><span class="lbl">projects</span></div>
+  </div>
+  <div class="opening-text">
+    <span class="lbl muted">Exploration</span>
+    <p><b>Traditional Sketching + CAD</b> : I reconnected with my roots in fine arts [ charcoal, pencil, acrylics, and artistic anatomy ] to bridge traditional sketching with technical design. As a personal passion, this workflow allows me to draft, refine, and model functional physical products straight from hand-drawn ideas.</p>
+  </div>
+
+  <nav class="tabs lbl" aria-label="Projects">
+    <a href="#a" class="on"><span class="n">[A]</span>Project</a>
+    <a href="#b"><span class="n">[B]</span>Project</a>
+  </nav>
+  <div class="reel">
+    <div class="reel-track" id="reel">
+      <a class="tile" href="#a"><div class="ph sq"><img src="../img/cad/a-render.svg" alt=""></div><span class="lbl">[A] Project</span></a>
+      <a class="tile" href="#b"><div class="ph sq"></div><span class="lbl">[B] Project</span></a>
+      <a class="tile" href="#"><div class="ph sq"></div><span class="lbl">[C] Project</span></a>
+      <a class="tile" href="#"><div class="ph sq"></div><span class="lbl">[D] Project</span></a>
+    </div>
+    <div class="reel-ctl lbl">
+      <span class="muted" id="reel-count">01 / 04</span>
+      <span><button type="button" id="reel-prev" aria-label="Previous projects">←</button><button type="button" id="reel-next" aria-label="Next projects">→</button></span>
+    </div>
+  </div>
+  <section id="lucrari">
+    <!-- ─── Project A ─── -->
+    <div class="project" id="a">
+    <div class="sheet">
+      <div class="sheet-h lbl"><b>[A] · Project</b><span class="muted">Sheet A / 2</span></div>
+      <div class="cad">
+        <div class="info">
+          <span class="lbl muted">Exploration</span>
+          <h3>Traditional Sketching + CAD</h3>
+          <div class="count"><b>24</b><span class="lbl">sketches</span></div>
+          <p class="bottom">I reconnected with my roots in fine arts [ charcoal, pencil, acrylics, and artistic anatomy ] to bridge traditional sketching with technical design. As a personal passion, this workflow allows me to draft, refine, and model functional physical products straight from hand-drawn ideas.</p>
+        </div>
+        <div class="canvas">
+          <div class="draw">
+            <div class="matte"><div class="sk">
+<figure class="dwgfig"><div class="ph"><img class="fit" src="../img/cad/a-drawing.svg" alt="Execution drawing of the moving jaw, A-03"></div></figure>
+<figure><div class="ph p34 sketch"><img src="../img/cad/a-sketch.svg" alt="Pencil sketch of the moving jaw"></div><figcaption class="lbl"><span>Bushing clamp</span><span class="muted">10.2025</span></figcaption></figure>
+<figure><div class="ph p34 sketch"><img src="../img/cad/a-model.svg" alt="3D model of the moving jaw in Fusion 360"></div><figcaption class="lbl"><span>Gearbox housing</span><span class="muted">05.2026</span></figcaption></figure>
+            </div></div>
+          </div>
+          <div class="tb t2">
+            <div><span class="lbl muted">Tools</span><span class="v">Pencil 0.5 + Fusion 360</span></div>
+            <div><span class="lbl muted">Total</span><span class="v">24 sheets</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="cat">
+        <figure class="t1"><div class="ph"><img src="../img/cad/a-render.svg" alt="Render of the moving jaw"></div><figcaption>(A.15) Render</figcaption></figure>
+        <figure class="big"><div class="matte"><div class="ph"><img src="../img/cad/a-exploded.svg" alt="Exploded view of the jaw sub-assembly"></div></div><figcaption>(A.09) Exploded view</figcaption></figure>
+        <div class="note">
+          <div class="list lbl">
+            <div><b>Fixed body</b><span class="muted">A-01</span></div>
+            <div><b>Moving jaw</b><span class="muted">A-03</span></div>
+            <div><b>Lead screw Tr 20×4</b><span class="muted">A-07</span></div>
+          </div>
+          <div class="swatch" aria-hidden="true"></div>
+        </div>
+        <figure class="mid"><div class="ph sq"><img class="fit" src="../img/cad/a-detail.svg" alt="Detail B, counterbore section"></div><figcaption>(A.25) Detail B, section</figcaption></figure>
+        <div class="row">
+          <figure><div class="ph sq"><img class="fit" src="../img/cad/a-bom.svg" alt="Parts list"></div><figcaption>(A.19) Parts list</figcaption></figure>
+          <figure><div class="ph sq sketch"><img src="../img/cad/a-concept.svg" alt="Concept sketch of the vise"></div><figcaption>(A.23) Concept sketch</figcaption></figure>
+          <figure><div class="ph sq"><img class="fit" src="../img/cad/a-params.svg" alt="User parameters in Fusion 360"></div><figcaption>(A.26) Parameters</figcaption></figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── Project B ─── -->
+    <div class="project" id="b">
+    <div class="sheet">
+      <div class="sheet-h lbl"><b>[B] · Project</b><span class="muted">Sheet B / 2</span></div>
+      <div class="cad">
+        <div class="info">
+          <span class="lbl muted">2D Sketches + 3D Renders</span>
+          <h3>CAD Design</h3>
+          <div class="count"><b>24</b><span class="lbl">sketches</span></div>
+          <p class="bottom">I draw by hand before I model. These pages show how a part changes before it reaches Fusion.</p>
+        </div>
+        <div class="canvas">
+          <div class="draw">
+            <div class="matte"><div class="sk">
+<figure class="dwgfig"><div class="ph"></div></figure>
+<figure><div class="ph p34 sketch"></div><figcaption class="lbl"><span>Bushing clamp</span><span class="muted">10.2025</span></figcaption></figure>
+<figure><div class="ph p34 sketch"></div><figcaption class="lbl"><span>Gearbox housing</span><span class="muted">05.2026</span></figcaption></figure>
+            </div></div>
+          </div>
+          <div class="tb t2">
+            <div><span class="lbl muted">Tools</span><span class="v">Pencil 0.5 + Fusion 360</span></div>
+            <div><span class="lbl muted">Total</span><span class="v">24 sheets</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="cat">
+        <figure class="t1"><div class="ph"></div><figcaption>(B.04)</figcaption></figure>
+        <figure class="big"><div class="matte"><div class="ph"></div></div><figcaption>(B.01) Housing section</figcaption></figure>
+        <div class="note">
+          <div class="list lbl">
+            <div><b>Worm</b><span class="muted">B-05</span></div>
+            <div><b>Worm wheel z30</b><span class="muted">B-06</span></div>
+            <div><b>Housing, 2 halves</b><span class="muted">B-02 / B-03</span></div>
+          </div>
+          <div class="swatch" aria-hidden="true"></div>
+        </div>
+        <figure class="mid"><div class="ph sq"></div><figcaption>(B.07) Gear mesh</figcaption></figure>
+        <div class="row">
+          <figure><div class="ph sq"></div><figcaption>(B.11)</figcaption></figure>
+          <figure><div class="ph sq sketch"></div><figcaption>(B.12) Sketch</figcaption></figure>
+          <figure><div class="ph sq"></div><figcaption>(B.14)</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="end lbl muted"><span>Programs: Fusion 360</span><span>2027</span></div>
+</div>
+
+<script src="../js/sheets.js"></script>
+
+    <script src="../js/protect.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="600" viewBox="0 0 450 600" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCE1EA"/></linearGradient>
+  </defs>
+  <rect width="450" height="600" fill="url(#bg)"/>
+  <!-- browser label -->
+  <rect x="12" y="12" width="150" height="54" fill="#F7F8FA" stroke="#C3CAD8"/>
+  <text x="22" y="30" font-size="10" font-weight="700" fill="#0F1730">BROWSER</text>
+  <text x="22" y="46" font-size="10" fill="#0F1730">▾ Moving jaw v4</text>
+  <text x="34" y="60" font-size="10" fill="#5B6479">Bodies · Sketches</text>
+  <!-- view cube -->
+  <g transform="translate(392 52) scale(1.6)" stroke="#5B6479" stroke-width=".5">
+    <rect width="16" height="16" fill="#F3F5F8" transform="matrix(.866 .5 -.866 .5 0 -16)"/>
+    <rect width="16" height="16" fill="#DDE3EF" transform="matrix(.866 .5 0 1 -13.86 -8)"/>
+    <rect width="16" height="16" fill="#C9D2E6" transform="matrix(-.866 .5 0 1 13.86 -8)"/>
+  </g>
+  <text x="392" y="88" font-size="8" fill="#5B6479" text-anchor="middle">FRONT</text>
+
+  <g transform="translate(114 270) scale(3.2)">
+    <!-- ground grid -->
+    <g transform="matrix(.866 .5 -.866 .5 0 0)" stroke="#C3CAD8" stroke-width=".18">
+      <line x1="-40" y1="-40" x2="-40" y2="60"/><line x1="-20" y1="-40" x2="-20" y2="60"/><line x1="0" y1="-40" x2="0" y2="60"/><line x1="20" y1="-40" x2="20" y2="60"/><line x1="40" y1="-40" x2="40" y2="60"/><line x1="60" y1="-40" x2="60" y2="60"/><line x1="80" y1="-40" x2="80" y2="60"/><line x1="100" y1="-40" x2="100" y2="60"/><line x1="120" y1="-40" x2="120" y2="60"/><line x1="140" y1="-40" x2="140" y2="60"/>
+      <line x1="-40" y1="-40" x2="140" y2="-40"/><line x1="-40" y1="-20" x2="140" y2="-20"/><line x1="-40" y1="0" x2="140" y2="0"/><line x1="-40" y1="20" x2="140" y2="20"/><line x1="-40" y1="40" x2="140" y2="40"/><line x1="-40" y1="60" x2="140" y2="60"/>
+    </g>
+    <!-- part -->
+    <g stroke="#1E2638" stroke-width=".42" stroke-linejoin="round">
+      <rect width="100" height="20" fill="#EEF1F6" transform="matrix(.866 .5 -.866 .5 0 -35)"/>
+      <g transform="matrix(.866 .5 0 1 -17.32 -25)">
+        <rect width="100" height="35" fill="#C8D0E0"/>
+        <line x1="0" y1="1.6" x2="100" y2="1.6" stroke-width=".2"/>
+        <circle cx="25" cy="17.5" r="5.5" fill="#8C97AE"/><circle cx="25" cy="17.5" r="3.3" fill="#3B4254"/>
+        <circle cx="75" cy="17.5" r="5.5" fill="#8C97AE"/><circle cx="75" cy="17.5" r="3.3" fill="#3B4254"/>
+      </g>
+      <rect width="20" height="35" fill="#A9B4CC" transform="matrix(-.866 .5 0 1 86.6 15)"/>
+    </g>
+    <!-- selected edge highlight -->
+    <line x1="-17.32" y1="-25" x2="69.28" y2="25" stroke="#2236E0" stroke-width=".9"/>
+  </g>
+
+  <!-- axis triad -->
+  <g transform="translate(46 520)" stroke-width="1.6" font-size="10" font-weight="700">
+    <line x1="0" y1="0" x2="26" y2="15" stroke="#0F1730"/><text x="30" y="22" fill="#0F1730">X</text>
+    <line x1="0" y1="0" x2="-26" y2="15" stroke="#5B6479"/><text x="-38" y="22" fill="#5B6479">Y</text>
+    <line x1="0" y1="0" x2="0" y2="-30" stroke="#2236E0"/><text x="-3" y="-34" fill="#2236E0">Z</text>
+  </g>
+  <!-- timeline -->
+  <rect x="0" y="566" width="450" height="34" fill="#F7F8FA" stroke="#C3CAD8"/>
+  <g fill="#5B6479"><path d="M14 576v14l-9-7z"/><path d="M22 576v14l9-7z"/></g>
+  <g stroke="#0F1730" stroke-width="1" fill="#E3E8F2">
+    <rect x="48" y="575" width="16" height="16"/><rect x="70" y="575" width="16" height="16"/><rect x="92" y="575" width="16" height="16"/>
+    <rect x="114" y="575" width="16" height="16"/><rect x="136" y="575" width="16" height="16" fill="#2236E0"/>
+    <rect x="158" y="575" width="16" height="16"/>
+  </g>
+  <text x="186" y="587" font-size="10" fill="#5B6479">Sketch · Extrude · Hole · Chamfer · Fillet</text>
+</svg>

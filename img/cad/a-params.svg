@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" font-family="'Segoe UI', Arial, sans-serif">
+  <rect width="600" height="600" fill="#DCE1EA"/>
+  <rect x="30" y="50" width="540" height="500" fill="#FFFFFF" stroke="#A9B4CC"/>
+  <rect x="30" y="50" width="540" height="38" fill="#F3F5F8" stroke="#A9B4CC"/>
+  <text x="46" y="75" font-size="14" font-weight="700" fill="#0F1730">PARAMETERS</text>
+  <text x="552" y="75" font-size="16" fill="#5B6479" text-anchor="end">×</text>
+  <g font-size="11" font-weight="700" fill="#5B6479">
+    <text x="46" y="114">Parameter</text><text x="220" y="114">Unit</text><text x="280" y="114">Expression</text><text x="470" y="114">Value</text>
+  </g>
+  <line x1="30" y1="124" x2="570" y2="124" stroke="#C3CAD8"/>
+  <text x="46" y="146" font-size="12" font-weight="700" fill="#0F1730">▾ User Parameters</text>
+  <g font-size="13" fill="#0F1730">
+    <text x="62" y="180">jaw_width</text><text x="220" y="180">mm</text><text x="280" y="180">100 mm</text><text x="470" y="180">100.00</text>
+    <text x="62" y="216">jaw_height</text><text x="220" y="216">mm</text><text x="280" y="216">35 mm</text><text x="470" y="216">35.00</text>
+    <text x="62" y="252">jaw_depth</text><text x="220" y="252">mm</text><text x="280" y="252">20 mm</text><text x="470" y="252">20.00</text>
+    <text x="62" y="288">hole_pitch</text><text x="220" y="288">mm</text><text x="280" y="288" fill="#2236E0">jaw_width / 2</text><text x="470" y="288">50.00</text>
+    <text x="62" y="324">hole_dia</text><text x="220" y="324">mm</text><text x="280" y="324">6.6 mm</text><text x="470" y="324">6.60</text>
+    <text x="62" y="360">cbore_dia</text><text x="220" y="360">mm</text><text x="280" y="360">11 mm</text><text x="470" y="360">11.00</text>
+    <text x="62" y="396">cbore_depth</text><text x="220" y="396">mm</text><text x="280" y="396">6.4 mm</text><text x="470" y="396">6.40</text>
+    <text x="62" y="432">screw_pitch</text><text x="220" y="432">mm</text><text x="280" y="432">4 mm</text><text x="470" y="432">4.00</text>
+  </g>
+  <rect x="31" y="270" width="538" height="26" fill="#2236E0" opacity=".08"/>
+  <g stroke="#E3E8F2"><line x1="30" y1="194" x2="570" y2="194"/><line x1="30" y1="230" x2="570" y2="230"/><line x1="30" y1="266" x2="570" y2="266"/><line x1="30" y1="302" x2="570" y2="302"/><line x1="30" y1="338" x2="570" y2="338"/><line x1="30" y1="374" x2="570" y2="374"/><line x1="30" y1="410" x2="570" y2="410"/><line x1="30" y1="446" x2="570" y2="446"/></g>
+  <text x="46" y="476" font-size="12" font-weight="700" fill="#0F1730">▸ Model Parameters</text>
+  <rect x="470" y="504" width="84" height="30" fill="#2236E0"/>
+  <text x="512" y="524" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">OK</text>
+</svg>

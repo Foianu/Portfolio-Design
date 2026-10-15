@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="600" viewBox="0 0 450 600" font-family="'Segoe Print', 'Bradley Hand', 'Comic Sans MS', cursive">
+  <defs>
+    <filter id="p" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7"/>
+      <feDisplacementMap in="SourceGraphic" scale="3.2"/>
+    </filter>
+    <pattern id="ln" width="450" height="26" patternUnits="userSpaceOnUse"><line x1="0" y1="25.5" x2="450" y2="25.5" stroke="#DCE2EC" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="450" height="600" fill="#F7F8FA"/>
+  <rect width="450" height="600" fill="url(#ln)"/>
+  <line x1="52" y1="0" x2="52" y2="600" stroke="#E6C9C9" stroke-width="1"/>
+
+  <g filter="url(#p)" fill="none" stroke-linecap="round">
+    <!-- construction lines -->
+    <g stroke="#A3AAB8" stroke-width=".9">
+      <line x1="40" y1="128" x2="330" y2="296"/><line x1="40" y1="212" x2="330" y2="380"/>
+      <line x1="120" y1="40" x2="120" y2="300"/><line x1="380" y1="200" x2="380" y2="430"/>
+    </g>
+    <!-- iso jaw, pencil -->
+    <g transform="translate(110 250) scale(2.9)" stroke="#3E4556" stroke-width=".55">
+      <rect width="100" height="20" transform="matrix(.866 .5 -.866 .5 0 -35)"/>
+      <g transform="matrix(.866 .5 0 1 -17.32 -25)">
+        <rect width="100" height="35"/>
+        <circle cx="25" cy="17.5" r="5.5"/><circle cx="25" cy="17.5" r="3.3"/><circle cx="25.4" cy="17.2" r="3.1"/>
+        <circle cx="75" cy="17.5" r="5.5"/><circle cx="75" cy="17.5" r="3.3"/><circle cx="74.6" cy="17.8" r="5.3"/>
+      </g>
+      <rect width="20" height="35" transform="matrix(-.866 .5 0 1 86.6 15)"/>
+    </g>
+    <!-- shading strokes on right face -->
+    <g stroke="#8A91A1" stroke-width=".8">
+      <line x1="364" y1="304" x2="364" y2="398"/><line x1="356" y1="309" x2="356" y2="403"/><line x1="348" y1="314" x2="348" y2="408"/>
+      <line x1="340" y1="318" x2="340" y2="412"/><line x1="332" y1="323" x2="332" y2="417"/>
+    </g>
+    <!-- small front view -->
+    <g stroke="#3E4556" stroke-width="1.1">
+      <rect x="80" y="470" width="200" height="70"/>
+      <circle cx="130" cy="505" r="11"/><circle cx="230" cy="505" r="11"/>
+      <circle cx="130" cy="505" r="6"/><circle cx="230" cy="505" r="6"/>
+      <line x1="80" y1="556" x2="280" y2="556"/><line x1="130" y1="458" x2="230" y2="458"/>
+      <path d="M86 552l-6 4 6 4M274 552l6 4-6 4M136 454l-6 4 6 4M224 454l6 4-6 4"/>
+    </g>
+    <!-- arrows to notes -->
+    <g stroke="#2236E0" stroke-width="1.1">
+      <path d="M262 330 C 300 360, 320 420, 330 450"/><path d="M324 444l6 8 2-10"/>
+      <path d="M176 150 C 150 120, 140 110, 120 100"/><path d="M128 97l-9 2 6 7"/>
+    </g>
+  </g>
+
+  <g fill="#3E4556" font-size="15">
+    <text x="66" y="44">moving jaw — idea 2</text>
+    <text x="70" y="96" fill="#2236E0" font-size="13">grip face → serrated?</text>
+    <text x="300" y="470" fill="#2236E0" font-size="13">2× M6</text>
+    <text x="300" y="486" fill="#2236E0" font-size="13">counterbored</text>
+    <text x="168" y="577" font-size="13">100</text>
+    <text x="168" y="452" font-size="13">50</text>
+    <text x="300" y="530" font-size="13">check screw</text>
+    <text x="300" y="546" font-size="13">head clearance!</text>
+  </g>
+</svg>

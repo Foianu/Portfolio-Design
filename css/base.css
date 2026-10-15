@@ -1,0 +1,55 @@
+/* Shared theme for every page: colors, fonts, page container */
+
+@import url("https://fonts.googleapis.com/css2?family=Doto:wght@400..900&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+
+:root {
+    --paper: #E8EBF0;
+    --sheet: #F3F5F8;
+    --ink: #111111;
+    --muted: #5B6479;
+    --line: #C3CAD8;
+    --dim: #CFD6E6;
+    --wash: var(--paper);   /* hover = page background colour */
+    --blue: #2236E0;
+    --white: #FFFFFF;      /* link highlight background */
+    --accent: var(--ink);   /* active tab; CAD page switches it to --blue */
+    --f: "Doto", ui-monospace, "Cascadia Mono", Consolas, monospace;
+    --f-text: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;   /* About + Exploration text */
+    color-scheme: light;
+}
+
+body {
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: var(--f);
+    font-weight: 600;
+}
+
+h1, h2, h3, h4, b {
+    font-weight: 900;
+}
+
+::selection {
+    background: var(--ink);
+    color: var(--sheet);
+}
+
+
+/* pictures can't be dragged out or long-pressed to save (see js/protect.js) */
+
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+/* page container: one width + gutter for the whole body */
+
+.wrap {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 28px clamp(16px, 4vw, 56px) 40px;
+    padding-inline: clamp(16px, round(4vw, 1px), 56px);   /* whole pixels, so 1px borders stay crisp */
+}
+
+

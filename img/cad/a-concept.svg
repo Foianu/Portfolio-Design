@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" font-family="'Segoe Print', 'Bradley Hand', 'Comic Sans MS', cursive">
+  <defs>
+    <filter id="p" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="11"/>
+      <feDisplacementMap in="SourceGraphic" scale="3.5"/>
+    </filter>
+    <pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#E1E6EE" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="600" height="600" fill="#F7F8FA"/>
+  <rect width="600" height="600" fill="url(#g)"/>
+  <g filter="url(#p)" fill="none" stroke="#3E4556" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- side view of vise -->
+    <path d="M60 400H520V430H60Z"/>
+    <path d="M80 400V250H150V310H170V400"/>
+    <path d="M330 400V270H400V400"/>
+    <path d="M150 250V310"/><path d="M330 270V310"/>
+    <rect x="150" y="262" width="12" height="48" stroke="#2236E0"/>
+    <rect x="318" y="270" width="12" height="40" stroke="#2236E0"/>
+    <!-- workpiece -->
+    <rect x="164" y="280" width="152" height="40" stroke="#8A91A1" stroke-dasharray="6 5"/>
+    <!-- lead screw -->
+    <path d="M170 360H540" stroke-dasharray="10 4 2 4" stroke="#8A91A1" stroke-width="1"/>
+    <path d="M170 352H400M170 368H400"/>
+    <path d="M400 345H430V375H400"/>
+    <path d="M430 360H540"/><circle cx="546" cy="360" r="7"/>
+    <path d="M546 300V420"/>
+    <!-- travel arrow -->
+    <path d="M330 230H430M420 224l10 6-10 6" stroke="#2236E0"/>
+    <!-- hatch on body -->
+    <path d="M84 300l20-20M84 320l40-40M84 340l60-60M84 360l70-70M90 380l70-70M110 380l50-50" stroke="#A3AAB8" stroke-width=".9"/>
+  </g>
+  <g font-size="15" fill="#3E4556">
+    <text x="40" y="60">vise concept — v1</text>
+    <text x="340" y="215" fill="#2236E0" font-size="13">travel 100</text>
+    <text x="40" y="225" fill="#2236E0" font-size="13">replaceable</text>
+    <text x="40" y="241" fill="#2236E0" font-size="13">jaw plates</text>
+    <text x="420" y="470" font-size="13">Tr20×4 ?</text>
+    <text x="60" y="470" font-size="13">body: cast iron</text>
+    <text x="60" y="520" font-size="13">→ model in Fusion, check</text>
+    <text x="60" y="538" font-size="13">   parts fit with joints</text>
+  </g>
+</svg>

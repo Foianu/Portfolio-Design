@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#CFD6E6" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="600" height="600" fill="#F3F5F8"/>
+  <rect width="600" height="600" fill="url(#g)"/>
+
+  <!-- label + progress, centred in the square -->
+  <text x="60" y="263" font-family="ui-monospace, Consolas, monospace" font-size="68" font-weight="700" fill="#2236E0">WORK IN</text>
+  <text x="60" y="335" font-family="ui-monospace, Consolas, monospace" font-size="68" font-weight="700" fill="#2236E0">PROGRESS</text>
+  <rect x="60" y="367" width="400" height="12" fill="none" stroke="#2236E0" stroke-width="1.4"/>
+  <rect x="60" y="367" width="40" height="12" fill="#2236E0"/>
+  <text x="540" y="379" text-anchor="end" font-family="ui-monospace, Consolas, monospace" font-size="18" font-weight="700" fill="#2236E0">10%</text>
+</svg>

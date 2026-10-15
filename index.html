@@ -6,6 +6,7 @@
         <meta name="author" content="portfolio">
             <title>Valentina Foianu</title>
 
+            <link href="./css/base.css" rel="stylesheet">
             <link href="./css/styles.css" rel="stylesheet">
             <link rel="icon" href="./img/portrait.png">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,10 @@
 
                 <div class="header">       
                     <div class="header-text">
+                        <div>
+                            <img src="./img/portrait.png" width="64" height="64" alt="Valentina Foianu">
+                        </div>
+
                         <div>
                             <p class="small-font">Bucharest . Romania</p>
                         </div>
@@ -38,35 +43,41 @@
             </section>
 
 
-            <section> 
-                <div class="space-small">
-                    <div class="section-content">
-                        <a href="./pages/Portfolio.html">
-                        <div class="flex"> 
+            <section class="space-small">
+                <div class="section-content">
+                    <div class="card-head">
+                        <p>Portfolio</p>
+                    </div>
 
-                            <img src="./img/portrait.png" width="50px" height="50px">
-        
-                            <div class="flex-text">
-                                <p class="flex-start">Portfolio</p>
-                            </div>
-
-                        </div>
+                    <div class="work">
+                        <a class="tile" href="./pages/Design-Portfolio.html" target="_blank">
+                            <div class="tile-img"><img src="./img/1920x1080_Render_Apartment_Living.jpg" alt="3D architectural render"></div>
+                            <p class="tile-lbl">Design</p>
                         </a>
+
+                        <div class="tile"><!-- link to ./pages/CAD-Design-Portfolio.html comes back when the page is ready -->
+                            <div class="tile-img"><img src="./img/cad/in-progress.svg" alt="CAD design, work in progress"></div>
+                            <p class="tile-lbl">CAD Design</p>
+                        </div>
                     </div>
                 </div>
             </section>
 
             
 
-            <section>
-                <div class="space-small">
-                    <div class="section-content">
+            <section class="space-small">
+                <div class="section-content">
+                    <div class="card-head">
+                        <p>Projects</p>
+                    </div>
+
+                    <div class="card-item">
                         <a href="https://linktr.ee/3dconcept.services" target="_blank">
                             <div class="flex">
                                 <div class="icon-group">
                                     <img src="./img/3DConcept-logo.png" width="50px" height="50px" alt="3DConcept">
                                 </div>
-            
+
                                 <div class="flex-text">
                                     <p class="flex-start">Studio</p>
                                     <p class="flex-end">Founder @ 3dconcept.services</p>
@@ -80,16 +91,10 @@
                             <div class="text">
                                 <p class="small-font">3D Visualization [ 3D Modeling + 3D Rendering ]</p>
                             </div>
-                        </div> 
+                        </div>
                     </div>
-                </div>
-            </section>
-                                
-            
 
-            <section>
-                <div class="space-small">
-                    <div class="section-content">
+                    <div class="card-item">
                         <a href="https://linktr.ee/tablou.tech" target="_blank">
                             <div class="flex">
                                 <div class="icon-group">
@@ -113,8 +118,30 @@
                     </div>
                 </div>
             </section>
+
+
+<!-- Contact -->
+
+            <section class="space-medium contact">
+                <div class="section-content">
+                    <div class="card-head">
+                        <p>Contact</p>
+                    </div>
+
+                    <div class="contact-row">
+                        <p>Phone</p>
+                        <a class="contact-btn" href="tel:+40729708258">+40 729 708 258</a>
+                    </div>
+
+                    <div class="contact-row">
+                        <p>E-mail</p>
+                        <a class="contact-btn" href="mailto:valentina.foianu@gmail.com">valentina.foianu@gmail.com</a>
+                    </div>
+                </div>
+            </section>
         </div>
 
+    <script src="./js/protect.js"></script>
     </body>
 </html>
 

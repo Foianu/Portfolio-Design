@@ -1,0 +1,254 @@
+/* Sheets layout (from the CAD page), shared by CAD + Portfolio:
+   opening, project tabs, reel, sheets with title block, catalog gallery.
+   Highlights use --accent: ink by default, blue on the CAD page. */
+:root{
+  /* colors + font come from css/base.css */
+  --gut:clamp(16px,4vw,56px);
+  --gap-sec:clamp(120px,14vw,220px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,p,figure{margin:0}
+h1,h2,h3{font-weight:900;text-wrap:balance;letter-spacing:-.01em}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.lbl{font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.muted{color:var(--muted)}
+
+/* rame cu noduri pătrate în colțuri */
+.frame{border:1px solid var(--line);position:relative;
+  background:
+    linear-gradient(var(--ink),var(--ink)) left -1px top -1px/7px 7px no-repeat,
+    linear-gradient(var(--ink),var(--ink)) right -1px top -1px/7px 7px no-repeat,
+    linear-gradient(var(--ink),var(--ink)) left -1px bottom -1px/7px 7px no-repeat,
+    linear-gradient(var(--ink),var(--ink)) right -1px bottom -1px/7px 7px no-repeat;
+  background-origin:border-box}
+
+/* ── Antet + file ── */
+.top{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:baseline}
+.top>:nth-child(2){text-align:right}
+.top>*{font-size:14px;font-weight:800;color:var(--ink)}
+.tabs{display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap;border-bottom:1px solid var(--ink);margin-top:clamp(64px,8vw,104px);padding-right:12px;position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);padding-top:10px}
+.tabs a{border:1px solid var(--ink);border-bottom:none;border-radius:0;background:var(--sheet);padding:8px 18px;margin-bottom:-1px;border-bottom:1px solid var(--ink)}
+.tabs a .n{color:var(--muted);margin-right:8px}
+.tabs a:hover{background:var(--wash)}
+.tabs a.on{background:var(--accent);color:var(--sheet);border-bottom-color:var(--accent)}
+.tabs a.on .n{color:var(--dim)}
+
+/* ── Deschidere ── */
+.hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,56px);padding-block:clamp(72px,9vw,140px) clamp(40px,5vw,72px);align-items:end}
+.hero h1{font-size:clamp(34px,4.4vw,66px);line-height:.95;overflow-wrap:anywhere}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero .lead{max-width:34ch;margin-top:28px}
+.led{background-color:var(--sheet);padding:18px}
+.led canvas{display:block;width:100%;height:clamp(200px,24vw,300px)}
+.led .leg{display:flex;justify-content:space-between;gap:12px;margin-top:12px;flex-wrap:wrap}
+.figs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;border-top:1px solid var(--ink);padding-top:14px}
+.figs b{display:block;font-size:clamp(24px,2.6vw,34px);font-weight:900;line-height:1.1;font-variant-numeric:tabular-nums}
+
+.top{padding-bottom:18px;border-bottom:1px solid var(--ink)}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid var(--ink);margin-bottom:8px}
+.head h2{font-size:clamp(30px,4.2vw,60px);line-height:.95}
+.head h2 sup{font-size:.3em;vertical-align:top;margin-left:.2em;font-weight:700;color:var(--accent)}
+.head p{max-width:38ch}
+
+/* ── Index ── */
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:720px}
+th,td{text-align:left;padding:16px 16px 16px 0;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+th{font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+td:first-child,th:first-child{width:64px}
+td.r,th.r{text-align:right;padding-right:0}
+td.name{font-weight:900;font-size:18px}
+tbody tr{cursor:pointer}
+tbody tr:hover td{color:var(--accent)}
+
+/* ── Rând de proiecte (slider) ── */
+.reel{padding-top:clamp(28px,3vw,40px)}
+.reel-track{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 3*clamp(12px,1.6vw,20px))/4);gap:clamp(12px,1.6vw,20px);overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:2px}
+.reel-track::-webkit-scrollbar{display:none}
+.tile{display:grid;gap:12px;scroll-snap-align:start;min-width:0}
+.tile:hover .ph{border-color:var(--accent)}
+.tile:hover .lbl{color:var(--accent)}
+.reel-ctl{display:flex;justify-content:space-between;align-items:center;margin-top:18px;border-top:1px solid var(--line);padding-top:12px}
+.reel-ctl button{font:inherit;background:none;border:1px solid var(--ink);color:var(--ink);width:36px;height:30px;margin-left:6px;cursor:pointer}
+.reel-ctl button:hover{background:var(--accent);color:var(--sheet);border-color:var(--accent)}
+@media (max-width:980px){.reel-track{grid-auto-columns:calc((100% - 2*clamp(12px,1.6vw,20px))/3)}}
+@media (max-width:600px){.reel-track{grid-auto-columns:72%}}
+/* ── Planșă (cadran cu cartuș) ── */
+.project{padding-top:clamp(96px,11vw,160px)}
+.project+.project{padding-top:clamp(180px,20vw,300px)}
+.sheet{border:1px solid var(--ink);background:var(--sheet)}
+.sheet-h{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 24px;border-bottom:1px solid var(--ink)}
+.cad{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr)}
+.cad .info{padding:clamp(24px,3.4vw,44px);border-right:1px solid var(--ink);display:flex;flex-direction:column;gap:28px;min-width:0}
+.cad h3{font-size:clamp(28px,3.4vw,48px);line-height:.95}
+.opening{display:flex;flex-direction:column;gap:28px;padding-top:clamp(64px,8vw,120px)}
+.opening h1{font-size:clamp(28px,3.4vw,48px);line-height:.95}
+.count{display:flex;align-items:baseline;gap:12px}
+.count b{font-size:clamp(56px,7vw,100px);font-weight:900;line-height:.8;color:var(--accent)}
+.opening-text{font-family:var(--f-text);font-weight:400;display:flex;flex-direction:column;gap:14px;padding-top:clamp(48px,6vw,80px)}
+.opening-text b{font-weight:600}
+.opening-text .lbl{font-family:var(--f);font-weight:800}
+/* sheet paragraphs read in IBM Plex Mono too */
+.cad .info p{font-family:var(--f-text);font-weight:400}
+.cad .info p b{font-weight:600}
+.cad .info p{max-width:38ch}
+.boxes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border:1px solid var(--ink)}
+.boxes>div{padding:14px 16px;display:grid;gap:6px}
+.boxes>div+div{border-left:1px solid var(--ink)}
+.boxes b{font-size:20px;font-weight:900}
+.canvas{display:grid;grid-template-rows:1fr auto;min-width:0}
+.canvas .draw{padding:clamp(20px,3vw,40px);display:flex;align-items:center;justify-content:center;min-height:360px;
+  background:var(--sheet)}
+.canvas svg{width:100%;max-width:560px;height:auto;display:block}
+.canvas svg .o{stroke:var(--ink);stroke-width:1.6;fill:var(--sheet)}
+.canvas svg .hi{stroke:var(--ink);stroke-width:1.6;fill:var(--wash)}
+.canvas svg .t{stroke:var(--ink);stroke-width:.7;fill:none}
+.canvas svg .c{stroke:var(--accent);stroke-width:.7;fill:none;stroke-dasharray:8 3 2 3}
+.canvas svg .h{stroke:var(--ink);stroke-width:.7;fill:none;stroke-dasharray:4 3}
+.canvas svg .bl{stroke:var(--accent);stroke-width:.8;fill:none}
+.canvas svg text{font-family:var(--f);font-size:10px;font-weight:800;fill:var(--ink)}
+.canvas svg text.b{fill:var(--accent)}
+.canvas .empty{width:100%;max-width:560px;aspect-ratio:4/3;border:1px solid var(--line);background:var(--sheet)}
+.tb{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid var(--ink)}
+.tb>div{padding:12px 14px;display:grid;gap:4px;min-width:0}
+.tb>div+div{border-left:1px solid var(--ink)}
+.tb .v{font-weight:800;font-size:14px;overflow-wrap:anywhere}
+
+/* ── Galerie tip catalog ── */
+.cat{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:clamp(12px,2vw,24px);row-gap:clamp(28px,4vw,56px);margin-top:clamp(64px,8vw,120px)}
+.cat figure{display:grid;gap:8px;min-width:0}
+.cat figcaption{font-size:13px;font-weight:700;letter-spacing:.08em;color:var(--muted)}
+.cat .t1{grid-column:1/3;grid-row:1}
+.cat .big{grid-column:1/8;grid-row:2/4}
+.cat .note{grid-column:8/12;grid-row:2;align-self:center;display:flex;gap:clamp(12px,2vw,24px);align-items:stretch}
+.cat .mid{grid-column:8/11;grid-row:3;align-self:end}
+.cat .row{grid-column:3/13;grid-row:4;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,1.6vw,20px)}
+.matte{padding:clamp(14px,3%,28px);border:1px solid var(--line)}
+.cat .big{position:relative;isolation:isolate}
+.cat .big::before{content:"";position:absolute;z-index:-1;width:72%;aspect-ratio:1;left:48%;top:38%;border-radius:50%;background:var(--accent);pointer-events:none}
+.cat .big .ph{background-color:var(--sheet)}
+.cat .big .matte{background:var(--paper)}
+.cat{overflow:hidden;padding:8px}
+.list{border:1px solid var(--ink);padding:12px 14px;display:grid;gap:14px;flex:1;min-width:0;background:var(--sheet)}
+.list div{display:grid;line-height:1.35}
+.list b{font-weight:900}
+.swatch{flex:0 0 34%;background:var(--wash);border:1px solid var(--line)}
+
+/* rame foto, de înlocuit cu <img> */
+.ph{position:relative;aspect-ratio:4/5;max-width:100%;overflow:hidden;border:1px solid var(--line);
+  background-color:var(--sheet);
+}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2}
+.ph img.fit{object-fit:contain;background:var(--sheet)}
+.ph::after,.matte::after,.canvas .empty::after{content:"";position:absolute;inset:-1px;z-index:3;pointer-events:none;
+  background:linear-gradient(var(--ink),var(--ink)) left top/6px 6px no-repeat,linear-gradient(var(--ink),var(--ink)) right top/6px 6px no-repeat,linear-gradient(var(--ink),var(--ink)) left bottom/6px 6px no-repeat,linear-gradient(var(--ink),var(--ink)) right bottom/6px 6px no-repeat}
+.ph{overflow:visible}.ph img{overflow:hidden}
+.matte,.canvas .empty{position:relative}
+.cat .big .ph::after{display:none}
+.ph .s{position:absolute;right:10px;bottom:8px;font-size:11px;font-weight:700;color:var(--muted);z-index:1}
+.ph.sq{aspect-ratio:1}
+.ph.p34{aspect-ratio:3/4}
+.ph.sketch{}
+.sk .dwgfig{grid-column:1/-1}
+.ph.dwg{display:flex;align-items:center;justify-content:center;padding:clamp(12px,2vw,24px);aspect-ratio:4/3}
+.ph.dwg svg{max-width:520px}
+.sk .ph.p34{aspect-ratio:4/3}
+.ph.dwg svg{width:100%;height:auto;display:block}
+
+.sk{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,2vw,24px);width:100%;align-self:stretch}
+.sk figure{display:grid;gap:8px;min-width:0}
+.sk figcaption{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.sk{grid-template-rows:1fr 1fr;gap:clamp(14px,1.8vw,22px);aspect-ratio:3/4;max-height:820px}.sk figure{gap:0;min-height:0}.sk figcaption{display:none}.sk .ph,.sk .ph.p34,.sk .ph.dwg{aspect-ratio:auto;height:100%}
+.end{margin-top:clamp(140px,16vw,240px)}
+.end>*{font-size:14px;font-weight:800;color:var(--ink)}
+/* ── Schițe ── */
+.strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,2vw,24px);margin-top:clamp(32px,4vw,56px)}
+.strip figure{display:grid;gap:8px}
+.strip figcaption{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+
+/* ── Software ── */
+.tools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(24px,4vw,56px);margin-top:24px}
+.tools div{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.tools b{font-size:18px;font-weight:900}
+.lvl{display:flex;gap:4px}
+.lvl i{width:10px;height:10px;border-radius:50%;background:var(--dim);display:block}
+.lvl i.on{background:var(--accent)}
+
+/* ── Contact ── */
+.end{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--ink);padding-top:14px}
+
+@media (max-width:980px){
+  .hero,.contact,.cad{grid-template-columns:minmax(0,1fr)}
+  .cad .info{border-right:none;border-bottom:1px solid var(--ink)}
+  .strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .tb{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .tb>div:nth-child(4){border-left:none}
+  .tb>div:nth-child(n+4){border-top:1px solid var(--ink)}
+  .cat .big{grid-column:1/9}
+  .cat .note,.cat .mid{grid-column:9/13}
+  .cat .row{grid-column:3/13}
+}
+@media (max-width:600px){
+  .top{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .tabs{justify-content:flex-start;padding-right:0;gap:4px}
+  .tabs a{padding:6px 10px;font-size:11px}
+  .figs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .tools{grid-template-columns:minmax(0,1fr)}
+  .tb{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .tb>div:nth-child(odd){border-left:none}
+  .tb>div:nth-child(4){border-left:1px solid var(--ink)}
+  .tb>div:nth-child(n+3){border-top:1px solid var(--ink)}
+  .tb>div:last-child{grid-column:span 2}
+  .cat{grid-template-columns:minmax(0,1fr)}
+  .cat .t1,.cat .big,.cat .note,.cat .mid,.cat .row{grid-column:1/-1;grid-row:auto}
+  .cat .t1{width:40%}
+}
+/* sheet text sits at the bottom of the left column */.cad .info p.bottom{margin-top:auto}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* landscape photos (Portfolio): one image per sheet + strips of 2 */
+.ph.land{aspect-ratio:16/10}
+.draw>a,.draw>figure{display:block;width:100%}
+.strip.s2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.strip a{display:block}
+@media (max-width:600px){.strip,.strip.s2{grid-template-columns:minmax(0,1fr)}}
+
+/* profile (Portfolio): sheets made of framed cells. Each cell draws its right + bottom line inside itself;
+   the grid reaches 1px under the sheet border, so the outer lines sit exactly on that border (never doubled, at any zoom) */
+.profile{display:grid;gap:clamp(24px,3vw,40px);padding-top:clamp(64px,8vw,104px)}
+.cells{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:0 -1px -1px 0}
+.cells>*{background:var(--sheet);box-shadow:inset -1px 0 0 var(--ink),inset 0 -1px 0 var(--ink);padding:16px 18px;display:grid;gap:8px;align-content:start;min-width:0}
+.cells .v{font-weight:800;font-size:15px;line-height:1.45;overflow-wrap:anywhere}
+.cells .w2{grid-column:span 2}
+.cells .w3{grid-column:span 3}
+.cells.c5{grid-template-columns:repeat(5,minmax(0,1fr))}
+.cells>a{transition:background .2s ease,color .2s ease}
+.cells>a:hover{background:var(--ink);color:var(--sheet)}
+.cells>a:hover .muted{color:var(--dim)}
+@media (max-width:980px){.cells,.cells.c5{grid-template-columns:repeat(2,minmax(0,1fr))}.cells .w3{grid-column:span 2}.cells>:last-child:nth-child(odd){grid-column:span 2}}
+@media (max-width:600px){.cells,.cells.c5{grid-template-columns:minmax(0,1fr)}.cells .w2,.cells .w3,.cells>:last-child:nth-child(odd){grid-column:auto}}
+
+/* gallery without the small top image (Portfolio): everything moves up one row */
+@media (min-width:601px){.cat.no-t1 .big{grid-row:1/3}.cat.no-t1 .note{grid-row:1}.cat.no-t1 .mid{grid-row:2}.cat.no-t1 .row{grid-row:3}}
+/* medium image right edge lines up with the grey square of the note (Portfolio) */
+@media (min-width:981px){.cat.no-t1 .mid{grid-column:9/12}}
+/* bottom row with a single wide frame instead of three squares (Portfolio [C]) */
+.cat .row.row-1{grid-template-columns:minmax(0,1fr)}
+/* [E]: the two small images sit on the left, level with the note box; the wide frame goes right under them */
+@media (min-width:601px){.cat.row-left .row:not(.row-1){grid-column:1/9;grid-row:1;grid-template-columns:repeat(2,minmax(0,1fr))}.cat.row-left .row-next{grid-row:2}.cat.row-left .note{align-self:start}}
+@media (min-width:981px){.cat.row-left .row:not(.row-1){grid-column:1/8}}
+/* reel pictures in black and white, full colour on hover (Portfolio) */
+.reel.bw .tile img{filter:grayscale(1);transition:filter .3s ease}
+.reel.bw .tile:hover img,.reel.bw .tile:focus-visible img{filter:none}
+/* sheet photo inside one larger frame with corner nodes, sheet colour around it, no second frame on the photo (Portfolio) */
+.draw:has(>.matte){padding:0;align-items:stretch}
+.draw>.matte{width:100%;background:var(--sheet);display:flex;align-items:center;border:none}
+.draw>.matte>a{width:100%}
+.draw .matte .ph{border:none}
+.draw .matte .ph::after{display:none}
+/* title block with 2 columns (Portfolio) */
+.tb.t2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.tb.t2>div{border-top:none;border-left:none;grid-column:auto}
+.tb.t2>div+div{border-left:1px solid var(--ink)}
